@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>나눔메이트</title>
     <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
     <!-- 주소.이미지.키워드 추가확인필요 -->
     <!-- SEO -->
     <meta name="title" content="일상속 나눔을 만드는 나눔메이트" />
@@ -39,7 +39,7 @@
     <link rel="stylesheet" href="css/res_kyungran.css" />
     <link rel="stylesheet" href="css/res_minju.css" />
     <!-- 폰트어썸 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- 제이쿼리 -->
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js" integrity="sha512-3j3VU6WC5rPQB4Ld1jnLV7Kd5xr+cq9avvhwqzbH/taCRNURoeEpoPBK9pDyeukwSxwRPJ8fDgvYXd6SkaZ2TA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -75,7 +75,7 @@
             <h2 class="timer count-title count-number" data-to="300" data-speed="2000"></h2>
             <p class="count-text">함께하는 사람들</p>
           </div>
-          <div class="counter col_fourth ">
+          <div class="counter col_fourth">
             <h2 class="timer count-title count-number" data-to="1700" data-speed="2000"></h2>
             <p class="count-text">프로그램 건수</p>
           </div>
@@ -89,119 +89,55 @@
       <div class="section1"></div>
       <!-- 경란 -->
       <div class="section2"></div>
-          <!-- 민주 -->
+      <!-- 민주 -->
       <div class="section3">
-        
+        <div class="snstext">
+          <h1>우리가 같이만든 변화들</h1>
+          <a href=""><img src="images/minju/youtube.png" alt="유튜브" /></a>
+          <a href=""><img src="images/minju/instargrame.png" alt="인스타그램" /></a>
+          <a href=""><img src="images/minju/facebook.png" alt="페이스북" /></a>
+        </div>
+        <div class="nanumsns-swiper">
+          <!-- Swiper -->
+          <div class="swiper nanumsns">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="images/minju/sns1.png" alt="sns1" /></div>
+              <div class="swiper-slide"><img src="images/minju/sns2.png" alt="sns2" /></div>
+              <div class="swiper-slide"><img src="images/minju/sns3.png" alt="sns3" /></div>
+              <div class="swiper-slide"><img src="images/minju/sns4.png" alt="sns4" /></div>
+            </div>
+          </div>
+          <div class="swiper-button-next"><img src="images/minju/pgnation.png" alt="" /></div>
+        </div>
       </div>
-  
-      <div class="section4"></div>
+
+      <div class="section4">
+        <div class="animated-title">
+          <div class="track">
+            <div class="content"><img src="images/minju/imges1.png" alt="" /></div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="clearboth">
+          <div class="right">
+            <h1>나눔메이트</h1>
+            <p>
+              나눔메이트는 사회에 기여하고자 하는 분들을 위한 소중한 커뮤니티입니다. <br />
+              서비스 이용약관 개인정보 처리방침
+              <br />
+              <br />
+              Copyright (C)나눔메이트. All rights reserved.
+            </p>
+          </div>
+          <div class="left">
+            <h2><i class="fa-solid fa-phone"></i>문의하기</h2>
+            <button class="oline">온라인문의</button>
+            <button class="check">참여정보확인</button>
+          </div>
+        </div>
+      </footer>
     </div>
-    <footer></footer>
-
-    <script>
-      (function ($) {
-        $.fn.countTo = function (options) {
-          options = options || {};
-
-          return $(this).each(function () {
-            // set options for current element
-            var settings = $.extend(
-              {},
-              $.fn.countTo.defaults,
-              {
-                from: $(this).data("from"),
-                to: $(this).data("to"),
-                speed: $(this).data("speed"),
-                refreshInterval: $(this).data("refresh-interval"),
-                decimals: $(this).data("decimals"),
-              },
-              options
-            );
-
-            // how many times to update the value, and how much to increment the value on each update
-            var loops = Math.ceil(settings.speed / settings.refreshInterval),
-              increment = (settings.to - settings.from) / loops;
-
-            // references & variables that will change with each update
-            var self = this,
-              $self = $(this),
-              loopCount = 0,
-              value = settings.from,
-              data = $self.data("countTo") || {};
-
-            $self.data("countTo", data);
-
-            // if an existing interval can be found, clear it first
-            if (data.interval) {
-              clearInterval(data.interval);
-            }
-            data.interval = setInterval(updateTimer, settings.refreshInterval);
-
-            // initialize the element with the starting value
-            render(value);
-
-            function updateTimer() {
-              value += increment;
-              loopCount++;
-
-              render(value);
-
-              if (typeof settings.onUpdate == "function") {
-                settings.onUpdate.call(self, value);
-              }
-
-              if (loopCount >= loops) {
-                // remove the interval
-                $self.removeData("countTo");
-                clearInterval(data.interval);
-                value = settings.to;
-
-                if (typeof settings.onComplete == "function") {
-                  settings.onComplete.call(self, value);
-                }
-              }
-            }
-
-            function render(value) {
-              var formattedValue = settings.formatter.call(self, value, settings);
-              $self.html(formattedValue);
-            }
-          });
-        };
-
-        $.fn.countTo.defaults = {
-          from: 0, // the number the element should start at
-          to: 0, // the number the element should end at
-          speed: 1000, // how long it should take to count between the target numbers
-          refreshInterval: 100, // how often the element should be updated
-          decimals: 0, // the number of decimal places to show
-          formatter: formatter, // handler for formatting the value before rendering
-          onUpdate: null, // callback method for every time the element is updated
-          onComplete: null, // callback method for when the element finishes updating
-        };
-
-        function formatter(value, settings) {
-          return value.toFixed(settings.decimals);
-        }
-      })(jQuery);
-
-      jQuery(function ($) {
-        // custom formatting example
-        $(".count-number").data("countToOptions", {
-          formatter: function (value, options) {
-            return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ",");
-          },
-        });
-
-        // start all the timers
-        $(".timer").each(count);
-
-        function count(options) {
-          var $this = $(this);
-          options = $.extend({}, options || {}, $this.data("countToOptions") || {});
-          $this.countTo(options);
-        }
-      });
-    </script>
   </body>
 </html>

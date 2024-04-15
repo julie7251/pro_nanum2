@@ -1,2 +1,109 @@
 @charset "utf-8";
+@import url(main);
 /* 민주 */
+.section3 .nanumsns-swiper .swiper-button-next::after {
+  display: none;
+}
+.section3 .nanumsns-swiper .swiper-button-next img {
+  position: absolute;
+  font-size: 3vw;
+  top: 120px;
+  right: 750px;
+}
+.section3 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.section3 .snstext {
+  float: left;
+  width: 40%;
+  position: absolute;
+  top: 50px;
+  left: 100px;
+}
+.section3 .snstext h1 {
+  font-size: 2vw;
+  font-weight: 800;
+}
+.section .snstext a {
+}
+.section3 .nanumsns-swiper {
+  width: 50%;
+  float: right;
+}
+
+/* ===================================================== */
+/* 움직이는 텍스트 */
+.animated-title {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  padding: 70px 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.animated-title .track {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 60s linear infinite;
+}
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+@media (hover: hover) and (min-width: 700px) {
+  .animated-title .content {
+    -webkit-transform: translateY(calc(100% - 8rem));
+    transform: translateY(calc(100% - 8rem));
+  }
+}
+/* ===================================================== */
+.animated-title{
+border-top: 1px solid #333;
+}
+
+footer{
+    width: 100%;
+    height: 300px;
+    background-color: #333;
+    color: #fff;
+}
+footer .clearboth{
+    clear: both;
+}
+footer .right{
+    float: left;
+    margin: 50px;
+}
+.right h1 {
+    font-family: "UhBeeSe_hyun";
+    font-size: 3vw;
+    text-align: left;
+    padding: 20px;
+}.right p{
+    line-height: 1.5;
+    text-align: left;
+}
+footer .left{
+    float: right;
+    margin: 50px;
+}
+.left h2{
+    font-size: 3vw;
+    text-align: right;
+}
+.left button{
+    width: 130px;
+    height: 50px;
+    margin: 20px 5px;
+    background-color: #333;
+    border: 1px solid #fff;
+    color: #fff;
+}
