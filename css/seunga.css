@@ -1,0 +1,154 @@
+@charset "utf-8";
+/* 폰트 */
+@font-face {
+  font-family: "UhBeeSe_hyun";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeeSe_hyun.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "KBO-Dia-Gothic_light";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/KBO-Dia-Gothic_light.woff") format("woff");
+}
+@font-face {
+  font-family: "KBO-Dia-Gothic_medium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/KBO-Dia-Gothic_medium.woff") format("woff");
+}
+@font-face {
+  font-family: "KBO-Dia-Gothic_bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/KBO-Dia-Gothic_bold.woff") format("woff");
+}
+/* 공통 */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+}
+body {
+  font-family: "KBO-Dia-Gothic_light", sans-serif;
+  font-size: 16px;
+
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+/* 기타
+(컬러)
+대표색
+파랑 #134AA9
+보조색
+밝은 파랑 #1E6BF1
+연한 하늘색 #F0F4FF
+푸터색 #3333
+*/
+
+/* =======================================================승아 */
+/* 상단하단 바디내용 확인 */
+body {
+  padding: 25px;
+  background-color: #ffff;
+  color: #333;
+  text-align: center;
+}
+.visual img {
+  width: 100%;
+  height: auto;
+
+}
+nav li{
+    font-family: "KBO-Dia-Gothic_medium";
+}
+.top-left-menu{
+    display: flex;
+    color: #134aa9;
+}
+.top-right-menu{
+    display: flex;
+    color: #134aa9;
+}
+/*-=-=-=-=-=-=-=-=-=-=-=- */
+/* Column Grids */
+/*-=-=-=-=-=-=-=-=-=-=-=- */
+
+.col_half {
+  width: 49%;
+}
+.col_third {
+  width: 32%;
+}
+.col_fourth {
+  width: 23.5%;
+}
+.col_fifth {
+  width: 18.4%;
+}
+.col_sixth {
+  width: 15%;
+}
+.col_three_fourth {
+  width: 74.5%;
+}
+.col_twothird {
+  width: 66%;
+}
+.col_half,
+.col_third,
+.col_twothird,
+.col_fourth,
+.col_three_fourth,
+.col_fifth {
+  position: relative;
+  display: inline;
+  display: inline-block;
+  float: left;
+  margin-right: 2%;
+  margin-bottom: 20px;
+}
+.end {
+  margin-right: 0 !important;
+}
+/* Column Grids End */
+
+.wrapper {
+  width: 100%;
+  height: 150px;
+  margin: 30px auto;
+  position: relative;
+  /* background-color: #F0F4FF; */
+  background-color: #F0F4FF;
+  text-align: center;
+}
+.counter {
+
+  padding: 20px 0;
+  border-radius: 5px;
+}
+.count-title {
+  font-size: 40px;
+  font-weight: normal;
+  margin-top: 10px;
+  margin-bottom: 0;
+  text-align: center;
+}
+.count-text {
+  font-size: 13px;
+  font-weight: normal;
+  margin-top: 10px;
+  margin-bottom: 0;
+  text-align: center;
+}
+.fa-2x {
+  margin: 0 auto;
+  float: none;
+  display: table;
+  color: #134aa9;
+}
