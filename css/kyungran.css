@@ -1,2 +1,183 @@
 @charset "utf-8";
 /* 경란 */
+.section2 {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.section-tite {
+  display: block;
+  font-size: 28px;
+  font-weight: 600;
+  padding-top: 150px;
+  padding-bottom: 40px;
+}
+/* 카테고리 */
+.tab-nav {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+.tab-nav a {
+  padding: 11px 14px;
+  border-radius: 50px;
+  border: 1px solid #641313;
+  /* border: 1px solid #E8E8E8; */
+  color: black;
+}
+/* 토글 전체 */
+.right-toggle {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  gap: 24px;
+  padding: 20px 0;
+}
+/* 토글1 */
+.toggle-bt1 {
+  position: relative;
+  display: block;
+  font-family: inherit;
+  font-size: 14px;
+  color: #000;
+  cursor: pointer;
+  border: 0;
+  background-color: transparent;
+  line-height: 19px;
+}
+.area-list {
+  position: absolute;
+  background-color: #fff;
+  right: 106px;
+  transform: translateX(-50%);
+  top: 50px;
+  border: 1px solid #ddd;
+  box-shadow: 0 3px 6px 0 rgba(0 0 0 / 16%);
+  padding-bottom: 7px;
+  max-height: 202px;
+  min-width: 80px;
+  overflow-y: scroll;
+  z-index: 99;
+}
+.area-list > li {
+  position: relative;
+  display: block;
+  font-size: 15px;
+  color: #666;
+  white-space: nowrap;
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+  padding: 9px 0 1px;
+}
+.toggle-bt-icon {
+  display: inline-block;
+  width: 10px;
+  height: 6px;
+  background: url(../images/kyungran/toggle-arrow2.png) no-repeat;
+  background-position: 0px 0px;
+  margin-left: 6px;
+  vertical-align: 2px;
+}
+/* 토글2 */
+.toggle-bt2 {
+  position: relative;
+  display: block;
+  font-family: inherit;
+  font-size: 14px;
+  color: #000;
+  cursor: pointer;
+  border: 0;
+  background-color: transparent;
+  line-height: 19px;
+}
+.monthly-list {
+  position: absolute;
+  background-color: #fff;
+  right: 26.5px;
+  transform: translateX(-50%);
+  top: 50px;
+  border: 1px solid #ddd;
+  box-shadow: 0 3px 6px 0 rgba(0 0 0 / 16%);
+  padding-bottom: 7px;
+  max-height: 202px;
+  min-width: 80px;
+  overflow-y: scroll;
+  z-index: 99;
+}
+.monthly-list > li {
+  position: relative;
+  display: block;
+  font-size: 15px;
+  color: #666;
+  white-space: nowrap;
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+  padding: 9px 0 1px;
+}
+/* 토글3 */
+.toggle-bt3 {
+  position: relative;
+  display: block;
+  font-family: inherit;
+  font-size: 14px;
+  color: #000;
+  cursor: pointer;
+  border: 0;
+  background-color: transparent;
+  line-height: 19px;
+}
+.order-list {
+  position: absolute;
+  background-color: #fff;
+  right: -48px;
+  transform: translateX(-50%);
+  top: 50px;
+  border: 1px solid #ddd;
+  box-shadow: 0 3px 6px 0 rgba(0 0 0 / 16%);
+  padding-bottom: 7px;
+  max-height: 202px;
+  min-width: 80px;
+  z-index: 99;
+}
+.order-list > li {
+  position: relative;
+  display: block;
+  font-size: 15px;
+  color: #666;
+  white-space: nowrap;
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+  padding: 9px 0 1px;
+}
+.list-wrap {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.img-box {
+  position: relative;
+  display: block;
+  width: 290px;
+  height: 330px;
+  text-align: left;
+}
+.img-box > a > img {
+  position: relative;
+  width: 100%;
+  padding-bottom: 7px;
+}
+.img-box .hart-icon {
+    display: none;
+  
+}
+.list-wrap > .img-box > a > span:nth-child(2) {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
+.list-wrap > .img-box > a > span {
+  position: relative;
+  display: block;
+  padding: 10px 0 0px;
+  letter-spacing: -1px;
+  color: #202020;
+  font-size: 18px;
+}
