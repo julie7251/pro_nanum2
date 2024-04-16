@@ -1,0 +1,64 @@
+@charset "utf-8";
+@import url(seunga.css);
+/* 회원가입 */
+header{
+  height: 80px;
+}
+.joinform{
+  padding: 100px 0;
+}
+.join {
+  position: relative;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  cursor: pointer;
+}
+.joinform h1 {
+  font-size: 4vw;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.join h2 {
+  font-size: 2vw;
+  font-weight: 800;
+  text-align: center;
+  padding-top: 50px;
+  line-height: 2;
+}
+.join h6 {
+  font-size: 2vw;
+  text-align: center;
+}
+.box1 {
+  padding: 60px;
+  width: 500px;
+  height: 250px;
+  border: none;
+  background-color: #e7ecf1;
+  border-radius: 50px;
+}
+.box2 {
+  padding: 60px;
+  width: 500px;
+  height: 250px;
+  border: none;
+  background-color: #134aa9;
+  border-radius: 50px;
+  color: #fff;
+}
+
+.box1 i{
+    font-size: 3vw;
+    position: absolute;
+    top: 50px;
+    left: 660px;
+}
+.box2 i{
+    font-size: 3vw;
+    position: absolute;
+    top: 50px;
+    right: 660px;
+}
