@@ -1,0 +1,76 @@
+@charset "utf-8";
+/* 로그인 */
+header{
+    height: 80px;
+    
+  }
+  .logingform{
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .logingform h1{
+    font-size: 3vw;
+    margin-bottom: 10%;
+  }
+  .login{
+    padding-top:5%;
+    margin: 0 auto;
+    width: 600px;
+    height: 700px;
+    background-color:#E7ECF1;
+    display: block;
+    border-radius: 20px;
+  }
+  form input{
+    padding-left: 5%;
+    position: relative;
+    display: block;
+    outline: none;
+    width: 65%;
+    height: 50px;
+    text-align: left;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: none;
+  }
+  .remember-check{
+    width: 2%;
+    height: 2%;
+    position: absolute;
+    left:750px;
+
+  }
+  form p{
+    position: absolute;
+    left: 790px;
+    top: 485px;
+    padding-bottom: 50px;
+  }
+  form button{
+    margin: 0 auto;
+    display: block;
+    padding: 3%;
+    width: 400px;
+    height: 60px;
+    border: none;
+    border-radius: 20px;
+    background-color: #134AA9;
+    color: #fff;
+    font-size: 1vw;
+    cursor: pointer;
+  }
+  .loginbutton{
+    margin-top: 60px;
+  }
+  .joinbutton{
+    margin-top: 10px;
+  }
+  .icon img{
+    display: inline;
+    width: 10%;
+    margin: 5%;
+  }
+
+
+
+  
