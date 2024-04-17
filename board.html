@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>커뮤니티</title>
+     <!-- favicon -->
+   <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
+   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png" />
+   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png" />
+   <link rel="manifest" href="images/favicon/site.webmanifest" />
+   <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+   <meta name="msapplication-TileColor" content="#da532c" />
+   <meta name="theme-color" content="#ffffff" />
+    <style>
+        @font-face {
+            font-family: "UhBeeSe_hyun";
+            src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeeSe_hyun.woff") format("woff");
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: "KBO-Dia-Gothic_light";
+            src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/KBO-Dia-Gothic_light.woff") format("woff");
+        }
+        @font-face {
+            font-family: "KBO-Dia-Gothic_medium";
+            src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/KBO-Dia-Gothic_medium.woff") format("woff");
+        }
+        @font-face {
+            font-family: "KBO-Dia-Gothic_bold";
+            src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/KBO-Dia-Gothic_bold.woff") format("woff");
+        }
+        /* 공통 */
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        body {
+            font-family: "KBO-Dia-Gothic_light", sans-serif;
+            font-size: 16px;
+            background-color: #ffff;
+            color: #333;
+            text-align: center;
+        }
+        li {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+        }
+        /* 기타 (컬러) 대표색 파랑 #134AA9 보조색 밝은 파랑 #1E6BF1 연한 하늘색 #F0F4FF 푸터색 #3333 */
+        #board {
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 60px;
+        }
+        .board-hd {
+            width: 100%;
+            height: 300px;
+            background-color: #134AA9;
+            color: #fff;
+            text-align: left;
+            padding: 30px;
+        }
+        .board-hd-inner{
+            width: 1400px;
+            margin: 0 auto;
+/* background-color: skyblue; */
+        }
+        .tab-menu {
+            position: relative;
+            display: flex;
+            gap: 5%;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        .tab-menu li a {
+            color: #fff;
+        }
+        .collapsible {
+            background-color: #fff;
+            cursor: pointer;
+            padding: 30px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 22px;
+            font-family: "KBO-Dia-Gothic_medium";
+        }
+      
+        .content {
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            background-color: #F0F4FF;
+            font-size: 20px;
+            text-align: left;
+            letter-spacing: 1px;
+            line-height: 3rem;
+            /* padding: 20px; */
+        }
+    
+        .collapsible:after {
+            content: '\002B';
+            color: #134AA9;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+        .active:after {
+            content: "\2212";
+            color: #134AA9;
+        }
+        @media only screen and (max-width: 768px) {
+            .tab-menu {
+                flex-direction: column;
+            }
+            .collapsible {
+                padding: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="board-hd">
+<div class="board-hd-inner">
+            <div class="hd-inner clear">
+            <h1>게시판</h1>
+            <ul class="tab-menu">
+              <li><a href="#board-1">FAQ</a></li>
+              <li><a href="#board-2">모집게시판</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+    <div class="board-section" id="board">
+      
+     
+            <div class="FAQ-box" id="board-1">
+                <button type="button" class="collapsible" onclick="collapse(this);">Q. 나눔메이트는 어떤 서비스인가요? </button>
+                <div class="content">
+                    <p><strong>A.</strong> 나눔메이트는 봉사를 하려는 사람들에게 봉사프로그램 정보를 제공하며, <br> 게시판을 통해 직접 인원을 모집하여 함께 봉사프로그램에 참가 할 수 있습니다.</p>
+                </div>
+                <button type="button" class="collapsible" onclick="collapse(this);">Q. 모집 마감이후에는 신청이 불가능한가요? </button>
+                <div class="content">
+                    <p><strong>A.</strong>  프로그램별로 상이하기 때문에 해당 프로그램의 담당자에게 문의해주시길 바랍니다.</p>
+                </div>
+                <button type="button" class="collapsible" onclick="collapse(this);">Q. 봉사실적 조회도 가능한가요? </button>
+                <div class="content">
+                    <p><strong>A.</strong>  프로그램별로 실적인증을 받을 수 있으면 실적도회도 가능합니다.</p>
+                </div>
+                <button type="button" class="collapsible" onclick="collapse(this);">Q. 신청취소는 어떻게 하나요? </button>
+                <div class="content">
+                    <p><strong>A.</strong>  신청취소의 경우 신청내역 페이지에서 취소기간중에 취소하실 수 있습니다. <br> 취소기간이 지났다면 해당 프로그램 담당자에게 재문의 바랍니다.</p>
+                </div>
+            </div>
+        </div>
+      </div>
+
+<script>
+    function collapse(element) {
+        var before = document.getElementsByClassName("active")[0]; // 기존에 활성화된 버튼
+        if (before && document.getElementsByClassName("active")[0] != element) { // 자신 이외에 이미 활성화된 버튼이 있으면
+            before.nextElementSibling.style.maxHeight = null; // 기존에 펼쳐진 내용 접고
+            before.classList.remove("active"); // 버튼 비활성화
+        }
+        element.classList.toggle("active"); // 활성화 여부 toggle
+
+        var content = element.nextElementSibling;
+        if (content.style.maxHeight != 0) { // 버튼 다음 요소가 펼쳐져 있으면
+            content.style.maxHeight = null; // 접기
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px"; // 접혀있는 경우 펼치기
+        }
+    }
+</script>
+</body>
+</html>
