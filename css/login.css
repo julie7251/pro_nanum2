@@ -15,8 +15,8 @@ header{
   .login{
     padding-top:5%;
     margin: 0 auto;
-    width: 600px;
-    height: 700px;
+    width: 30%;
+    height: 75vh;
     background-color:#E7ECF1;
     display: block;
     border-radius: 20px;
@@ -27,31 +27,30 @@ header{
     display: block;
     outline: none;
     width: 65%;
-    height: 50px;
+    height: 5vh;
     text-align: left;
     margin: 0 auto;
     margin-top: 20px;
     border: none;
   }
   .remember-check{
-    width: 2%;
-    height: 2%;
-    position: absolute;
-    left:750px;
-
+    width: 20%;
+    height: 20%;
   }
-  form p{
-    position: absolute;
-    left: 790px;
-    top: 485px;
-    padding-bottom: 50px;
+  .checkbox{
+    display: flex;
+    width: 40%;
+    margin-left: 5%;
+    line-height: 3.3;
+    padding-left: 10%;
+    
   }
   form button{
     margin: 0 auto;
     display: block;
     padding: 3%;
-    width: 400px;
-    height: 60px;
+    width: 60%;
+    height: 6vh;
     border: none;
     border-radius: 20px;
     background-color: #134AA9;
@@ -60,7 +59,7 @@ header{
     cursor: pointer;
   }
   .loginbutton{
-    margin-top: 60px;
+    margin-top: 3%;
   }
   .joinbutton{
     margin-top: 10px;
@@ -70,7 +69,5 @@ header{
     width: 10%;
     margin: 5%;
   }
-
-
-
-  
+  /* 반응형 */
+  @media screen and (max-width: 1350px) {
