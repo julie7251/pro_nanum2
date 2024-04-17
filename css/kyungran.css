@@ -22,13 +22,13 @@
 .tab-nav a {
   padding: 11px 14px;
   border-radius: 50px;
-  border: 1px solid #E8E8E8;
+  border: 1px solid #e8e8e8;
   color: black;
 }
 .tab-nav li a:hover,
 .tab-nav li a.active {
- background-color: #1E6BF1;
- color: #fff;
+  background-color: #1e6bf1;
+  color: #fff;
 }
 
 /* 토글 전체 */
@@ -40,27 +40,27 @@
   padding: 26px 0;
 }
 /* 토글기능 */
-/* .toggle-bt1.active {
-    color: #76bd42;
-  }
-  .toggle-bt1::after {
-    content: "접기";
-    position: absolute;
-    display: inline-block;
-    width: 30px;
-    height: 10px;
-    color: #76bd42;
-    display: none;
-  }
-  
-  .toggle-bt1.active::after {
-    display: block;
-    top: 0;
-    left: 9px;
-  }
-  .toggle-bt1.active .toggle-bt-icon {
-    background-position: 0 -6px;
-  } */
+.area-list.active {
+  color: #76bd42;
+}
+.toggle-bt1::after {
+  content: "접기";
+  position: absolute;
+  display: inline-block;
+  width: 30px;
+  height: 10px;
+  color: #76bd42;
+  display: none;
+}
+
+.toggle-bt1.active::after {
+  display: block;
+  top: 0;
+  left: 9px;
+}
+.toggle-bt1.active .toggle-bt-icon {
+  background-position: 0 -6px;
+}
 /* 토글1 */
 .toggle-bt1 {
   position: relative;
@@ -72,9 +72,14 @@
   border: 0;
   background-color: transparent;
   line-height: 19px;
+  width: 100px;
+  background-color: #1e6bf1;
+}
+.toggle-bt1:hover .area-list{
+  display: block;
 }
 .area-list {
-    display: none;
+  display: none;
   position: absolute;
   background-color: #fff;
   right: 106px;
@@ -87,6 +92,9 @@
   min-width: 80px;
   overflow-y: scroll;
   z-index: 99;
+}
+.area-list.active{
+  display: block;
 }
 .area-list > li {
   position: relative;
@@ -119,7 +127,7 @@
   line-height: 19px;
 }
 .monthly-list {
-    display: none;
+  display: none;
   position: absolute;
   background-color: #fff;
   right: 26.5px;
@@ -155,7 +163,7 @@
   line-height: 19px;
 }
 .order-list {
-    display: none;
+  display: none;
   position: absolute;
   background-color: #fff;
   right: -48px;
@@ -197,7 +205,7 @@
   padding-bottom: 7px;
 }
 .img-box .img-inner {
-    position: relative;
+  position: relative;
 }
 /* 찜하기 */
 .img-box .hart-icon {
@@ -207,14 +215,14 @@
   padding: 10px 20px;
   border: none;
   cursor: pointer;
-  background-color: rgba( 0, 0, 0, 0 );
+  background-color: rgba(0, 0, 0, 0);
 }
 .img-box .hart-icon .btn.act {
   background: url("../images/kyungran/full-hart-icon.svg") no-repeat center;
 }
 /* 내용 */
 .list-wrap > .img-box > a > span:nth-child(2) {
-    width: 100%;
+  width: 100%;
   overflow: hidden;
   /* white-space: nowrap; */
   text-overflow: ellipsis;
@@ -229,17 +237,17 @@
   font-size: 18px;
 }
 .pgn {
-    position: relative;
-display: block;
-padding: 50px 0;
-margin: auto;
+  position: relative;
+  display: block;
+  padding: 50px 0;
+  margin: auto;
 }
-.pgn > span{
-padding-right: 20px;
+.pgn > span {
+  padding-right: 20px;
 }
-.pgn > span:nth-child(1){
-    font-weight: 800;
-color: #1E6BF1;
+.pgn > span:nth-child(1) {
+  font-weight: 800;
+  color: #1e6bf1;
 }
 /* 섹션3 */
 .section3 {
@@ -247,7 +255,7 @@ color: #1E6BF1;
   /* background-color: #f0f4ff; */
 }
 .section3-inner {
-  display: flex; 
+  display: flex;
   justify-content: space-between;
   gap: 50px;
   margin: auto;
@@ -256,7 +264,7 @@ color: #1E6BF1;
   height: 353px;
 }
 /* 커뮤니티 */
-.section3 .CM-box{
+.section3 .CM-box {
   position: relative;
   text-align: left;
   padding: 15px 20px;
@@ -266,38 +274,38 @@ color: #1E6BF1;
   border: 1px solid #ddd;
   border-radius: 10px;
 }
-.CM-box .CM  span {
+.CM-box .CM span {
   font-size: 28px;
   font-weight: 600;
 }
-.CM-box .CM .plus-icon{
+.CM-box .CM .plus-icon {
   position: absolute;
   top: 15px;
   right: 20px;
   /* display: block; */
 }
-.CM-box .CM ul > span > a:hover{
+.CM-box .CM ul > span > a:hover {
   /* cursor:pointer; */
-background: url(../images/kyungran/hover-plus-icon.png);
+  background: url(../images/kyungran/hover-plus-icon.png);
 }
-.CM-box .CM li{
+.CM-box .CM li {
   font-size: 22px;
   line-height: 41px;
   padding-top: 8px;
-    padding-left: 17px;
-    color: #1E6BF1;
-    width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    word-break: break-all;
+  padding-left: 17px;
+  color: #1e6bf1;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
 }
 
 /* 자주 묻는 질문 */
-.section3 .FAQ-box{
+.section3 .FAQ-box {
   position: relative;
-text-align: left;
-padding: 15px 20px;
+  text-align: left;
+  padding: 15px 20px;
   width: 100%;
   min-width: 276px;
   background-color: #fff;
@@ -309,15 +317,15 @@ padding: 15px 20px;
   font-size: 28px;
   font-weight: 600;
 }
-.FAQ-box .FAQ .plus-icon{
+.FAQ-box .FAQ .plus-icon {
   position: absolute;
   top: 15px;
   right: 20px;
   /* display: block; */
 }
-.FAQ-box .FAQ ul > span > a:hover{
+.FAQ-box .FAQ ul > span > a:hover {
   /* cursor:pointer; */
-background: url(../images/kyungran/hover-plus-icon.png);
+  background: url(../images/kyungran/hover-plus-icon.png);
 }
 .FAQ-box .FAQ .FAQ-small-box {
   position: absolute;
@@ -327,13 +335,13 @@ background: url(../images/kyungran/hover-plus-icon.png);
   padding: 15px 33px;
   font-size: 22px;
   border-radius: 0px 0px 10px 10px;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   line-height: 66px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    word-break: break-all;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
 }
-.FAQ-box .FAQ .FAQ-small-box li:nth-child(1){
+.FAQ-box .FAQ .FAQ-small-box li:nth-child(1) {
   border-bottom: 1px solid #ddd;
 }
