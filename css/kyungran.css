@@ -1,5 +1,6 @@
 @charset "utf-8";
 /* 경란 */
+/* 섹션2 */
 .section2 {
   max-width: 1400px;
   margin: 0 auto;
@@ -12,6 +13,7 @@
   padding-bottom: 40px;
 }
 /* 카테고리 */
+
 .tab-nav {
   display: flex;
   gap: 5px;
@@ -20,18 +22,45 @@
 .tab-nav a {
   padding: 11px 14px;
   border-radius: 50px;
-  border: 1px solid #641313;
-  /* border: 1px solid #E8E8E8; */
+  border: 1px solid #E8E8E8;
   color: black;
 }
+.tab-nav li a:hover,
+.tab-nav li a.active {
+ background-color: #1E6BF1;
+ color: #fff;
+}
+
 /* 토글 전체 */
 .right-toggle {
   position: relative;
   display: flex;
   justify-content: flex-end;
   gap: 24px;
-  padding: 20px 0;
+  padding: 26px 0;
 }
+/* 토글기능 */
+/* .toggle-bt1.active {
+    color: #76bd42;
+  }
+  .toggle-bt1::after {
+    content: "접기";
+    position: absolute;
+    display: inline-block;
+    width: 30px;
+    height: 10px;
+    color: #76bd42;
+    display: none;
+  }
+  
+  .toggle-bt1.active::after {
+    display: block;
+    top: 0;
+    left: 9px;
+  }
+  .toggle-bt1.active .toggle-bt-icon {
+    background-position: 0 -6px;
+  } */
 /* 토글1 */
 .toggle-bt1 {
   position: relative;
@@ -45,6 +74,7 @@
   line-height: 19px;
 }
 .area-list {
+    display: none;
   position: absolute;
   background-color: #fff;
   right: 106px;
@@ -89,6 +119,7 @@
   line-height: 19px;
 }
 .monthly-list {
+    display: none;
   position: absolute;
   background-color: #fff;
   right: 26.5px;
@@ -124,6 +155,7 @@
   line-height: 19px;
 }
 .order-list {
+    display: none;
   position: absolute;
   background-color: #fff;
   right: -48px;
@@ -145,6 +177,7 @@
   border-bottom: 2px solid rgba(0, 0, 0, 0);
   padding: 9px 0 1px;
 }
+/* 봉사모집 한줄 묶음 */
 .list-wrap {
   position: relative;
   display: flex;
@@ -163,13 +196,27 @@
   width: 100%;
   padding-bottom: 7px;
 }
-.img-box .hart-icon {
-    display: none;
-  
+.img-box .img-inner {
+    position: relative;
 }
+/* 찜하기 */
+.img-box .hart-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  background-color: rgba( 0, 0, 0, 0 );
+}
+.img-box .hart-icon .btn.act {
+  background: url("../images/kyungran/full-hart-icon.svg") no-repeat center;
+}
+/* 내용 */
 .list-wrap > .img-box > a > span:nth-child(2) {
+    width: 100%;
   overflow: hidden;
-  white-space: nowrap;
+  /* white-space: nowrap; */
   text-overflow: ellipsis;
   word-break: break-all;
 }
@@ -180,4 +227,113 @@
   letter-spacing: -1px;
   color: #202020;
   font-size: 18px;
+}
+.pgn {
+    position: relative;
+display: block;
+padding: 50px 0;
+margin: auto;
+}
+.pgn > span{
+padding-right: 20px;
+}
+.pgn > span:nth-child(1){
+    font-weight: 800;
+color: #1E6BF1;
+}
+/* 섹션3 */
+.section3 {
+  background-color: #a7bfff;
+  /* background-color: #f0f4ff; */
+}
+.section3-inner {
+  display: flex; 
+  justify-content: space-between;
+  gap: 50px;
+  margin: auto;
+  max-width: 1400px;
+  padding: 56px 0;
+  height: 353px;
+}
+/* 커뮤니티 */
+.section3 .CM-box{
+  position: relative;
+  text-align: left;
+  padding: 15px 20px;
+  width: 100%;
+  min-width: 276px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+.CM-box .CM  span {
+  font-size: 28px;
+  font-weight: 600;
+}
+.CM-box .CM .plus-icon{
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  /* display: block; */
+}
+.CM-box .CM ul > span > a:hover{
+  /* cursor:pointer; */
+background: url(../images/kyungran/hover-plus-icon.png);
+}
+.CM-box .CM li{
+  font-size: 22px;
+  line-height: 41px;
+  padding-top: 8px;
+    padding-left: 17px;
+    color: #1E6BF1;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-break: break-all;
+}
+
+/* 자주 묻는 질문 */
+.section3 .FAQ-box{
+  position: relative;
+text-align: left;
+padding: 15px 20px;
+  width: 100%;
+  min-width: 276px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 22px;
+}
+.FAQ-box .FAQ span {
+  font-size: 28px;
+  font-weight: 600;
+}
+.FAQ-box .FAQ .plus-icon{
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  /* display: block; */
+}
+.FAQ-box .FAQ ul > span > a:hover{
+  /* cursor:pointer; */
+background: url(../images/kyungran/hover-plus-icon.png);
+}
+.FAQ-box .FAQ .FAQ-small-box {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 15px 33px;
+  font-size: 22px;
+  border-radius: 0px 0px 10px 10px;
+  background-color: #FAFAFA;
+  line-height: 66px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-break: break-all;
+}
+.FAQ-box .FAQ .FAQ-small-box li:nth-child(1){
+  border-bottom: 1px solid #ddd;
 }
