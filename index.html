@@ -42,6 +42,8 @@
     <!-- 제이쿼리 -->
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js" integrity="sha512-3j3VU6WC5rPQB4Ld1jnLV7Kd5xr+cq9avvhwqzbH/taCRNURoeEpoPBK9pDyeukwSxwRPJ8fDgvYXd6SkaZ2TA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sly/1.6.1/sly.min.js"></script>
     <!-- Js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/html5shiv.js"></script>
@@ -125,17 +127,20 @@
     <!-- 경란 -->
     <div class="section2">
       <h1 class="section-tite">나눔 프로그램</h1>
-      <ul class="tab-nav">
-        <li><a href="#work01">전체</a></li>
-        <li><a href="#work02">생활편의</a></li>
-        <li><a href="#work03">문화행사</a></li>
-        <li><a href="#work04">재해재난</a></li>
-        <li><a href="#work05">공익인권</a></li>
-        <li><a href="#work06">교육</a></li>
-        <li><a href="#work07">상담</a></li>
-        <li><a href="#work08">환경</a></li>
-        <li><a href="#work09">기타</a></li>
-      </ul>
+      <div class="tab-nav-wrapper">
+        <ul class="tab-nav">
+          <li ><a href="#work01">전체</a></li>
+          <li><a href="#work02">생활편의</a></li>
+          <li><a href="#work03">문화행사</a></li>
+          <li><a href="#work04">재해재난</a></li>
+          <li><a href="#work05">공익인권</a></li>
+          <li><a href="#work06">교육</a></li>
+          <li><a href="#work07">상담</a></li>
+          <li><a href="#work08">환경</a></li>
+          <li><a href="#work09">기타</a></li>
+          <span></span>
+        </ul>
+      </div>
 
       <div class="right-toggle">
         <button class="toggle-bt1" id="toggle-bt1">구군선택<i class="toggle-bt-icon"></i></button>
@@ -177,38 +182,40 @@
         <div class="list-wrap">
           <div class="img-box">
             <a href="#">
-              <div class="img-inner">
-                <img src="images/kyungran/painting2.png" alt="봉사이미지" />
-                <button class="hart-icon" onclick="toggleAct(this)"><img src="images/kyungran/hart-icon.svg" alt="" /></button>
-              </div>
+              <img src="images/kyungran/painting2.png" alt="봉사이미지" />
               <span>벽화길 조성 자원봉사활동 모집</span>
-              <span><img src="images/kyungran/icon1.png" alt="캘린더아이콘" /> 2024-05-20 &nbsp&nbsp 11:00 ~ 16:00</span>
-              <span><img src="images/kyungran/icon2.png" alt="지도아이콘" /> 대구 달서구</span>
+              <span><img src="images/kyungran/icon1.png" alt="캘린더아이콘" /> &nbsp&nbsp&nbsp&nbsp2024-05-20 </span>
+              <span><img src="images/kyungran/icon2.png" alt="지도아이콘" /> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp대구 &nbsp달서구</span>
             </a>
+            <button type="button" class="hart-icon"><img src="images/kyungran/hart-icon.svg" alt="하트아이콘" /></button>
+          </div>
+
+          <div class="img-box">
+            <a href="#">
+              <img src="images/kyungran/painting2.png" alt="봉사이미지" />
+              <span>벽화길 조성 자원봉사활동 모집</span>
+              <span><img src="images/kyungran/icon1.png" alt="캘린더아이콘" /> &nbsp&nbsp&nbsp&nbsp2024-05-20 </span>
+              <span><img src="images/kyungran/icon2.png" alt="지도아이콘" /> &nbsp&nbsp&nbsp&nbsp대구 &nbsp달서구</span>
+            </a>
+            <button type="button" class="hart-icon"><img src="images/kyungran/hart-icon.svg" alt="하트아이콘" /></button>
           </div>
           <div class="img-box">
             <a href="#">
               <img src="images/kyungran/painting2.png" alt="봉사이미지" />
               <span>벽화길 조성 자원봉사활동 모집</span>
-              <span><img src="images/kyungran/icon1.png" alt="캘린더아이콘" /> 2024-05-20 &nbsp&nbsp 11:00 ~ 16:00</span>
-              <span><img src="images/kyungran/icon2.png" alt="지도아이콘" /> 대구 달서구</span>
+              <span><img src="images/kyungran/icon1.png" alt="캘린더아이콘" /> &nbsp&nbsp&nbsp&nbsp2024-05-20 </span>
+              <span><img src="images/kyungran/icon2.png" alt="지도아이콘" /> &nbsp&nbsp&nbsp&nbsp대구 &nbsp달서구</span>
             </a>
+            <button type="button" class="hart-icon"><img src="images/kyungran/hart-icon.svg" alt="하트아이콘" /></button>
           </div>
           <div class="img-box">
             <a href="#">
               <img src="images/kyungran/painting2.png" alt="봉사이미지" />
               <span>벽화길 조성 자원봉사활동 모집</span>
-              <span><img src="images/kyungran/icon1.png" alt="캘린더아이콘" /> 2024-05-20 &nbsp&nbsp 11:00 ~ 16:00</span>
-              <span><img src="images/kyungran/icon2.png" alt="지도아이콘" /> 대구 달서구</span>
+              <span><img src="images/kyungran/icon1.png" alt="캘린더아이콘" /> &nbsp&nbsp&nbsp&nbsp2024-05-20 </span>
+              <span><img src="images/kyungran/icon2.png" alt="지도아이콘" /> &nbsp&nbsp&nbsp&nbsp대구 &nbsp달서구</span>
             </a>
-          </div>
-          <div class="img-box">
-            <a href="#">
-              <img src="images/kyungran/painting2.png" alt="봉사이미지" />
-              <span>벽화길 조성 자원봉사활동 모집</span>
-              <span><img src="images/kyungran/icon1.png" alt="캘린더아이콘" /> 2024-05-20 &nbsp&nbsp 11:00 ~ 16:00</span>
-              <span><img src="images/kyungran/icon2.png" alt="지도아이콘" /> 대구 달서구</span>
-            </a>
+            <button type="button" class="hart-icon"><img src="images/kyungran/hart-icon.svg" alt="하트아이콘" /></button>
           </div>
         </div>
         <div class="list-wrap">
@@ -216,33 +223,37 @@
             <a href="#">
               <img src="images/kyungran/painting2.png" alt="봉사이미지" />
               <span>벽화길 조성 자원봉사활동 모집</span>
-              <span><img src="images/kyungran/icon1.png" alt="캘린더아이콘" /> 2024-05-20 &nbsp&nbsp 11:00 ~ 16:00</span>
-              <span><img src="images/kyungran/icon2.png" alt="지도아이콘" /> 대구 달서구</span>
+              <span><img src="images/kyungran/icon1.png" alt="캘린더아이콘" /> &nbsp&nbsp&nbsp&nbsp2024-05-20 </span>
+              <span><img src="images/kyungran/icon2.png" alt="지도아이콘" /> &nbsp&nbsp&nbsp&nbsp대구 &nbsp달서구</span>
             </a>
+            <button type="button" class="hart-icon"><img src="images/kyungran/hart-icon.svg" alt="하트아이콘" /></button>
           </div>
           <div class="img-box">
             <a href="#">
               <img src="images/kyungran/painting2.png" alt="봉사이미지" />
               <span>벽화길 조성 자원봉사활동 모집</span>
-              <span><img src="images/kyungran/icon1.png" alt="캘린더아이콘" /> 2024-05-20 &nbsp&nbsp 11:00 ~ 16:00</span>
-              <span><img src="images/kyungran/icon2.png" alt="지도아이콘" /> 대구 달서구</span>
+              <span><img src="images/kyungran/icon1.png" alt="캘린더아이콘" /> &nbsp&nbsp&nbsp&nbsp2024-05-20 </span>
+              <span><img src="images/kyungran/icon2.png" alt="지도아이콘" /> &nbsp&nbsp&nbsp&nbsp대구 &nbsp달서구</span>
             </a>
+            <button type="button" class="hart-icon"><img src="images/kyungran/hart-icon.svg" alt="하트아이콘" /></button>
           </div>
           <div class="img-box">
             <a href="#">
               <img src="images/kyungran/painting2.png" alt="봉사이미지" />
               <span>벽화길 조성 자원봉사활동 모집</span>
-              <span><img src="images/kyungran/icon1.png" alt="캘린더아이콘" /> 2024-05-20 &nbsp&nbsp 11:00 ~ 16:00</span>
-              <span><img src="images/kyungran/icon2.png" alt="지도아이콘" /> 대구 달서구</span>
+              <span><img src="images/kyungran/icon1.png" alt="캘린더아이콘" /> &nbsp&nbsp&nbsp&nbsp2024-05-20 </span>
+              <span><img src="images/kyungran/icon2.png" alt="지도아이콘" /> &nbsp&nbsp&nbsp&nbsp대구 &nbsp달서구</span>
             </a>
+            <button type="button" class="hart-icon"><img src="images/kyungran/hart-icon.svg" alt="하트아이콘" /></button>
           </div>
           <div class="img-box">
             <a href="#">
               <img src="images/kyungran/painting2.png" alt="봉사이미지" />
               <span>벽화길 조성 자원봉사활동 모집</span>
-              <span><img src="images/kyungran/icon1.png" alt="캘린더아이콘" /> 2024-05-20 &nbsp&nbsp 11:00 ~ 16:00</span>
-              <span><img src="images/kyungran/icon2.png" alt="지도아이콘" /> 대구 달서구</span>
+              <span><img src="images/kyungran/icon1.png" alt="캘린더아이콘" /> &nbsp&nbsp&nbsp&nbsp2024-05-20 </span>
+              <span><img src="images/kyungran/icon2.png" alt="지도아이콘" /> &nbsp&nbsp&nbsp&nbsp대구 &nbsp달서구</span>
             </a>
+            <button type="button" class="hart-icon"><img src="images/kyungran/hart-icon.svg" alt="하트아이콘" /></button>
           </div>
         </div>
       </div>
