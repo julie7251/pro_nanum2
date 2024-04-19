@@ -6,58 +6,60 @@
 }
 .section4 .nanumsns-swiper .swiper-button-next img {
   position: absolute;
-  top: 180px;
-  right: 1000px;
+  top: 15px;
+  right: 1100px;
 }
 
 .section4 {
+  display: flex;
   margin-top: 100px;
-  margin-bottom: 650px;
+  margin-bottom: 100px;
   width: 100%;
   height: 100%;
   position: relative;
 }
 .section4 .snstext {
-  float: left;
-  width: 40%;
-  position: absolute;
-  top: 100px;
-  left: 100px;
+  padding-top: 5%;
+  width: 45%;
+}
+.section4 .snstext a img {
+  padding-top: 2%;
+  width: 13%;
 }
 .section4 .snstext h1 {
-  font-size: 2vw;
+  font-size: 3vw;
   font-weight: 800;
 }
-
 .section4 .nanumsns-swiper {
   width: 50%;
-  float: right;
 }
-.section4 .snstext .more{
+.section4 .snstext a .more {
+  margin: 0 auto;
   display: block;
-  position: absolute;
-  left: 350px;
   border: none;
-  background-color: #134AA9;
+  background-color: #134aa9;
   font-size: 1vw;
   font-weight: 800;
   color: #fff;
-  padding: 1.5%;
+  padding: 1% 2%;
   border-radius: 50px;
   cursor: pointer;
+  line-height: 2;
 }
-.section5{
-  margin-bottom: 50px;
+.snsnanum {
+  display: none;
 }
 /* ===================================================== */
 /* 움직이는 텍스트 */
+.section5 .content img {
+  width: 85%;
+}
 .animated-title {
-  
   position: relative;
   width: 100%;
   max-width: 100%;
   height: auto;
-  padding: 70px 0;
+  padding: 3%;
   overflow-x: hidden;
   overflow-y: hidden;
 }
@@ -82,10 +84,6 @@
   }
 }
 /* ===================================================== */
-.animated-title {
-  border-top: 1px solid #333;
-}
-
 footer {
   width: 100%;
   height: 300px;
@@ -97,27 +95,27 @@ footer .clearboth {
 }
 footer .right {
   float: left;
-  margin: 50px;
+  margin: 30px;
 }
-.right h1 {
+footer .right h1 {
   font-family: "UhBeeSe_hyun";
   font-size: 3vw;
   text-align: left;
   padding: 20px;
 }
-.right p {
+footer .right p {
   line-height: 1.5;
   text-align: left;
 }
 footer .left {
   float: right;
-  margin: 50px;
-}
-.left h2 {
+  margin: 30px;
+  }
+footer .left h2 {
   font-size: 3vw;
   text-align: right;
 }
-.left button {
+footer .left button {
   width: 130px;
   height: 50px;
   margin: 20px 5px;
@@ -131,7 +129,7 @@ footer .left {
 .top-button {
   position: fixed;
   right: 30px;
-  bottom: 60px;
+  top: 100px;
   z-index: 9999;
   display: flex;
   flex-direction: column;
@@ -154,4 +152,157 @@ footer .left {
   100% {
     transform: translatey(0);
   }
+}
+/* =================================================== */
+/* 반응형 */
+@media screen and (max-width: 1600px) {
+  .section4 .nanumsns-swiper .swiper-button-next img {
+    right: 900px;
+  }
+  .section4 .snstext .more {
+    left: 295px;
+  }
+}
+/* ===================================================== */
+@media screen and (max-width: 768px) {
+  .section4 .snstext {
+    display: block;
+    width: 100%;
+  }
+  .section4 .snstext h1 {
+    font-size: 5vw;
+    font-weight: 800;
+  }
+  .section4 .nanumsns-swiper {
+    display: none;
+  }
+  .section4 .snstext a .more {
+    display: block;
+    font-size: 3vw;
+    margin: 0 auto;
+    padding: 1% 2%;
+    line-height: 2;
+  }
+  .snsnanum {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 10%;
+  }
+  .snsnanum img {
+    width: 40%;
+    padding: 2%;
+  }
+  .section5 .animated-title {
+    padding: 6%;
+    padding-top: 2%;
+  }
+  footer {
+    height: 500px;
+    width: 100%;
+  }
+  footer .right h1 {
+    font-family: "UhBeeSe_hyun";
+    font-size: 5vw;
+    text-align: left;
+    padding: 20px;
+  }
+  footer .left {
+    float: left;
+  }
+  footer .left h2 {
+    font-size: 5vw;
+    text-align: left;
+  }
+  footer .left button {
+    width: 130px;
+    height: 50px;
+    margin: 20px 5px;
+    background-color: #333;
+    border: 1px solid #fff;
+    color: #fff;
+  }
+  footer .line{
+  
+  width: 400px;
+  height: 2px;
+  background-color: #fff;
+  margin-top: 10%;
+}
+}
+/* ===================================================== */
+@media screen and (max-width: 320px) {
+  .section4{
+    width: 100%;
+    height: 100px;
+  }
+  .section4 .snstext h1 {
+    font-size: 8vw;
+    font-weight: 800;
+  }
+  .section4 .snstext a img {
+    padding-top: 2%;
+    width: 18%;
+  }
+  .section4 .snstext a .more {
+    font-size: 5vw;
+    padding: 1% 2%;
+    line-height: 2;
+  }
+  .snsnanum {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .snsnanum img {
+    width: 50%;
+    padding: 2%;
+  }
+  .section5 .content img {
+    width: 150%;
+  }
+  .section5 .animated-title {
+    padding: 8%;
+    padding-top: 2%;
+  }
+  footer {
+    width: 100%;
+    height: 450px;
+  }
+  footer .right h1 {
+    font-family: "UhBeeSe_hyun";
+    font-size: 10vw;
+    text-align: left;
+  }
+  footer .left h2 {
+    font-size: 10vw;
+    text-align: center;
+  }
+  footer .left button {
+    width: 130px;
+    height: 50px;
+    margin-top: 20px;
+    background-color: #333;
+    border: 1px solid #fff;
+    color: #fff;
+     }
+  footer .right p {
+    line-height: 1.5;
+    font-size: 15px;
+  }
+  footer .left {
+  margin: 0 auto;
+  text-align: center;
+ width: 100%;}
+ footer .line{
+  
+  width: 250px;
+  height: 2px;
+  background-color: #fff;
+  margin-top: 10%;
+}
 }

@@ -2,8 +2,8 @@
 window.addEventListener("load", function () {
   var swiper = new Swiper(".nanumsns", {
     loop: true,
-    slidesPerView: 2.5,
-    spaceBetween: 0,
+    slidesPerView: 3,
+    spaceBetween: 180,
     centeredSlides: true,
     navigation: {
       nextEl: ".swiper-button-next",
