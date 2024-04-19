@@ -91,6 +91,10 @@ nav {
   white-space: nowrap;
   color: #134aa9;
 }
+.top-menu li:hover a {
+background: linear-gradient(to top,  #F0F4FF 100%, transparent 40%);
+transition: all 5s;
+}
 .top-menu li:nth-child(5) {
   margin-left: 8%;
 }
@@ -123,15 +127,18 @@ z-index: 999999;
 opacity: 0.8;
 }
 /* 네비 호버 */
+.top-menu > li{
+  padding: 5px;
+}
 .top-menu > li:hover > a {
-  /* background: linear-gradient(to top,#1E6BF1 40%, transparent 40%);
-  transition: all 3s; */
-  color: #1e6bf1;
-  text-decoration: underline;
+  /* background: linear-gradient(to top,#1e6bf1 40%, transparent 40%); */
+  transition: all 3s;
+  /* color: #1e6bf1; */
+  background-color:#F0F4FF ;
+  /* text-decoration: underline; */
 }
-.log > li:hover a {
-  color: #1e6bf1;
-}
+
+
 /*   모바일 로고 */
 .logo-tablet,
 .fa-solid {
@@ -259,7 +266,7 @@ opacity: 0.8;
   display: flex;
   justify-content: center;
   gap: 20%;
-  padding: 1vw;
+  padding: 2vw;
   position: absolute;
   bottom: 4%;
   
@@ -269,17 +276,19 @@ opacity: 0.8;
   font-family: "KBO-Dia-Gothic_medium";
 }
 .count-title {
-  font-size: 2vw;
+  font-size: 2.5vw;
   font-weight: normal;
   text-align: center;
   display: inline;
+  color: #1e6bf1;
 }
 .plus {
   display: inline;
 }
 .count-text {
   font-size: 16px;
-  /* margin-top: 20px; */
+  margin-top: 10px;
+white-space: nowrap;
 }
 /* 섹션1-서비스 */
 .section1 {
