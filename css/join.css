@@ -1,5 +1,4 @@
 @charset "utf-8";
-@import url(seunga.css);
 /* 회원가입 */
 header{
   height: 80px;
@@ -35,7 +34,7 @@ header{
 .box1 {
   padding: 60px;
   width: 500px;
-  height: 250px;
+  height: 300px;
   border: none;
   background-color: #e7ecf1;
   border-radius: 50px;
@@ -43,7 +42,7 @@ header{
 .box2 {
   padding: 60px;
   width: 500px;
-  height: 250px;
+  height: 300px;
   border: none;
   background-color: #134aa9;
   border-radius: 50px;
@@ -61,4 +60,121 @@ header{
     position: absolute;
     top: 50px;
     right: 660px;
+}
+/* ===================================== */
+/* 반응형 */
+@media screen and (max-width: 768px) {
+  .joinform{
+    padding: 50px;
+  }
+  .joinform h1 {
+    font-weight: bold;
+  }
+  .join {
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  .box1{
+    padding: 0px;
+    width: 280px;
+    height: 230px;
+    border: none;
+    background-color: #e7ecf1;
+    border-radius: 50px;
+  }
+  .box2{
+    padding: 0px;
+    width: 280px;
+    height: 230px;
+    border: none;
+    background-color: #134aa9;
+    border-radius: 50px;
+    color: #fff;
+  }
+  .box1 i{
+    font-size: 5vw;
+    position: absolute;
+    top: 50px;
+    left: 160px;
+}
+.box2 i{
+    font-size: 5vw;
+    position: absolute;
+    top: 50px;
+    right: 150px;
+}
+.join h2 {
+  font-size: 3vw;
+  font-weight: 800;
+  text-align: center;
+  padding-top: 90px;
+  line-height: 2;
+}
+.join h6 {
+  font-size: 3vw;
+  text-align: center;
+}
+
+}
+@media screen and (max-width: 320px) {
+  .joinform{
+    padding: 50px;
+  }
+  .joinform h1 {
+    font-size: 10vw;
+    font-weight: bold;
+  }
+  .join {
+    position: relative;
+    width: 100%;
+    /* justify-content: center; */
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    cursor: pointer;
+  }
+  .box1{
+    padding: 0px;
+    width: 800px;
+    height: 200px;
+    border: none;
+    background-color: #e7ecf1;
+    border-radius: 50px;
+  }
+  .box2{
+    padding: 0px;
+    width: 800px;
+    height: 200px;
+    border: none;
+    background-color: #134aa9;
+    border-radius: 50px;
+    color: #fff;
+  }
+  .box1 i{
+    font-size: 10vw;
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}
+.box2 i{
+    font-size: 10vw;
+    position: absolute;
+    top: 280px;
+    right: 90px;
+}
+.join h2 {
+  font-size: 6vw;
+  font-weight: 800;
+  text-align: center;
+  padding-top: 90px;
+  line-height: 2;
+}
+.join h6 {
+  font-size: 6vw;
+  text-align: center;
+}
 }
