@@ -33,7 +33,7 @@
     <!-- css -->
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/seunga.css " />
-    <link rel="stylesheet" href="css/minju.css">
+    <link rel="stylesheet" href="css/minju.css" />
     <link rel="stylesheet" href="css/login.css" />
     <!-- 폰트어썸 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -60,36 +60,46 @@
         <form>
           <input type="text" name="userName" placeholder="아이디" />
           <input type="text" name="userPassword" placeholder="비밀번호" />
-          <div class="checkbox">
-          <input type="checkbox" class="remember-check"/>아이디 저장하기</div>
+          <div class="check">
+            <input type="checkbox" class="remember-check" id="checkbox" />
+            <label for="checkbox">아이디 저장하기</label>
+          </div>
           <button class="loginbutton">로그인</button>
           <button class="joinbutton">회원가입</button>
           <div class="icon">
-          <a href="#"><img src="images/minju/icon1.png" alt="카카오톡" /></a>
-          <a href="#"><img src="images/minju/icon2.png" alt="구글" /></a>
-          <a href="#"><img src="images/minju/icon3.png" alt="네이버" /> </a>
-        </div>
+            <a href="#"><img src="images/minju/icon1.png" alt="카카오톡" /></a>
+            <a href="#"><img src="images/minju/icon2.png" alt="구글" /></a>
+            <a href="#"><img src="images/minju/icon3.png" alt="네이버" /> </a>
+          </div>
         </form>
       </div>
     </div>
     <footer>
-        <div class="clearboth">
-          <div class="right">
-            <h1>나눔메이트</h1>
-            <p>
-              나눔메이트는 사회에 기여하고자 하는 분들을 위한 소중한 커뮤니티입니다. <br />
-              서비스 이용약관 개인정보 처리방침
-              <br />
-              <br />
-              Copyright (C)나눔메이트. All rights reserved.
-            </p>
-          </div>
-          <div class="left">
-            <h2><i class="fa-solid fa-phone"></i>문의하기</h2>
-            <button class="oline">온라인문의</button>
-            <button class="check">참여정보확인</button>
-          </div>
+      <div class="clearboth">
+        <div class="right">
+          <h1>나눔메이트</h1>
+          <p>
+            나눔메이트는 사회에 기여하고자 하는 분들을 위한 소중한 커뮤니티입니다. <br />
+            서비스 이용약관 개인정보 처리방침
+            <br />
+            <br />
+            Copyright (C)나눔메이트. All rights reserved.
+          </p>
+          <div class="line"></div>
         </div>
-      </footer>
+
+        <div class="left">
+          <i class="fa-solid fa-phone">문의하기</i>
+          <button class="oline">온라인문의</button>
+          <button class="checklist">참여정보확인</button>
+        </div>
+      </div>
+    </footer>
+    <!-- flying banner
+    <div class="top-button">
+      <a href="#" class="chat-btn">
+        <img src="images/minju/fly.png" alt="chat" />
+      </a> -->
+    <!--  -->
   </body>
 </html>

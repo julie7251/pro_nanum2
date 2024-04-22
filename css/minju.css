@@ -110,8 +110,9 @@ footer .right p {
 footer .left {
   float: right;
   margin: 30px;
-  }
-footer .left h2 {
+}
+footer .left i{
+  display: block;
   font-size: 3vw;
   text-align: right;
 }
@@ -154,6 +155,25 @@ footer .left button {
   }
 }
 /* =================================================== */
+/* 참여하기 */
+
+.takejoin{
+  width: 100%;
+  position: fixed;
+  background-color: #fff;
+  bottom: 0px;
+  transition: top 0.3s ease-in-out; 
+}
+.takejoin .heart{
+  width: 80%;
+  height: 100px;
+  background-color: #ff4949;
+  color: #fff;
+  border: none;
+  font-size: 2vw;
+}
+
+/* =================================================== */
 /* 반응형 */
 @media screen and (max-width: 1600px) {
   .section4 .nanumsns-swiper .swiper-button-next img {
@@ -161,6 +181,41 @@ footer .left button {
   }
   .section4 .snstext .more {
     left: 295px;
+  }
+}
+/* ===================================================== */
+@media screen and (max-width: 859px) {
+  footer {
+    height: 500px;
+    width: 100%;
+  }
+  footer .right h1 {
+    font-family: "UhBeeSe_hyun";
+    font-size: 5vw;
+    text-align: left;
+    padding: 20px;
+  }
+  footer .left {
+    float: left;
+  }
+  footer .left i{
+    display: block;
+    font-size: 5vw;
+    text-align: left;
+  }
+  footer .left button {
+    width: 130px;
+    height: 50px;
+    margin: 20px 5px;
+    background-color: #333;
+    border: 1px solid #fff;
+    color: #fff;
+  }
+  footer .line {
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    margin-top: 10%;
   }
 }
 /* ===================================================== */
@@ -200,7 +255,7 @@ footer .left button {
     padding-top: 2%;
   }
   footer {
-    height: 500px;
+    height: 450px;
     width: 100%;
   }
   footer .right h1 {
@@ -212,9 +267,11 @@ footer .left button {
   footer .left {
     float: left;
   }
-  footer .left h2 {
-    font-size: 5vw;
+  footer .left i{
+    display: block;
+    font-size: 4vw;
     text-align: left;
+  }
   }
   footer .left button {
     width: 130px;
@@ -224,17 +281,36 @@ footer .left button {
     border: 1px solid #fff;
     color: #fff;
   }
-  footer .line{
-  
-  width: 400px;
-  height: 2px;
+  footer .line {
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    margin-top: 10%;
+  }
+/* ==================================================== */
+@media  screen and (max-width: 480px){
+/* 참여하기 */
+
+.takejoin{
+  width: 100%;
+  position: fixed;
   background-color: #fff;
-  margin-top: 10%;
+  bottom: 0px;
+  transition: top 0.3s ease-in-out; 
+}
+
+.takejoin .heart{
+  width: 80%;
+  height: 100px;
+  background-color: #ff4949;
+  color: #fff;
+  border: none;
+  font-size: 5vw;
 }
 }
-/* ===================================================== */
+/* ==================================================== */
 @media screen and (max-width: 320px) {
-  .section4{
+  .section4 {
     width: 100%;
     height: 100px;
   }
@@ -271,14 +347,10 @@ footer .left button {
   }
   footer {
     width: 100%;
-    height: 450px;
+    height: 410px;
   }
   footer .right h1 {
     font-family: "UhBeeSe_hyun";
-    font-size: 10vw;
-    text-align: left;
-  }
-  footer .left h2 {
     font-size: 10vw;
     text-align: center;
   }
@@ -289,20 +361,24 @@ footer .left button {
     background-color: #333;
     border: 1px solid #fff;
     color: #fff;
-     }
+  }
   footer .right p {
     line-height: 1.5;
-    font-size: 15px;
+    font-size: 13px;
   }
-  footer .left {
-  margin: 0 auto;
-  text-align: center;
- width: 100%;}
- footer .line{
-  
-  width: 250px;
-  height: 2px;
-  background-color: #fff;
-  margin-top: 10%;
-}
+  footer .left{
+      margin: 0 auto;
+    text-align: center;
+    width: 100%;
+  }
+  footer .left i {
+    font-size: 10vw;
+    text-align: center;
+  }
+  footer .line {
+    width: 250px;
+    height: 2px;
+    background-color: #fff;
+    margin-top: 10%;
+  }
 }

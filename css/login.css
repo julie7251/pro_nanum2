@@ -1,73 +1,136 @@
 @charset "utf-8";
 /* 로그인 */
-header{
-    height: 80px;
-    
-  }
-  .logingform{
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-  .logingform h1{
-    font-size: 3vw;
-    margin-bottom: 10%;
-  }
-  .login{
-    padding-top:5%;
-    margin: 0 auto;
-    width: 30%;
-    height: 75vh;
-    background-color:#E7ECF1;
-    display: block;
-    border-radius: 20px;
-  }
-  form input{
-    padding-left: 5%;
-    position: relative;
-    display: block;
-    outline: none;
-    width: 65%;
-    height: 5vh;
-    text-align: left;
-    margin: 0 auto;
-    margin-top: 20px;
-    border: none;
-  }
-  .remember-check{
-    width: 20%;
-    height: 20%;
-  }
-  .checkbox{
-    display: flex;
-    width: 40%;
-    margin-left: 5%;
-    line-height: 3.3;
-    padding-left: 10%;
-    
-  }
+header {
+  height: 80px;
+}
+.logingform {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.logingform h1 {
+  font-size: 3vw;
+  margin-bottom: 10%;
+}
+.login {
+  padding-top: 3%;
+  margin: 0 auto;
+  width: 30%;
+  height: 130%;
+  background-color: #e7ecf1;
+  display: block;
+  border-radius: 20px;
+}
+form > input {
+  padding-left: 5%;
+  position: relative;
+  display: block;
+  outline: none;
+  width: 65%;
+  height: 5vh;
+  text-align: left;
+  margin: 0 auto;
+  margin-top: 20px;
+  border: none;
+
+  
+}
+form .check{
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+form button {
+  margin: 0 auto;
+  display: block;
+  padding: 3%;
+  width: 60%;
+  height: 6vh;
+  border: none;
+  border-radius: 20px;
+  background-color: #134aa9;
+  color: #fff;
+  font-size: 1vw;
+  cursor: pointer;
+  line-height: 1;
+}
+.loginbutton {
+  margin-top: 3%;
+}
+.joinbutton {
+  margin-top: 10px;
+}
+.icon img {
+  display: inline;
+  width: 10%;
+  margin: 5%;
+}
+.line{
+  display: none;
+}
+/* 반응형 */
+@media screen and (max-width: 1000px) {
   form button{
-    margin: 0 auto;
-    display: block;
-    padding: 3%;
-    width: 60%;
-    height: 6vh;
-    border: none;
-    border-radius: 20px;
-    background-color: #134AA9;
-    color: #fff;
-    font-size: 1vw;
-    cursor: pointer;
+    font-size: 1.5vw;
   }
-  .loginbutton{
-    margin-top: 3%;
   }
-  .joinbutton{
-    margin-top: 10px;
+  @media screen and (max-width: 768px) {
+    .login{
+      width: 50%;
+    }
+    .logingform h1 {
+      font-size: 5vw;
+      margin-top: 5%;
+    }
+    form button{
+      font-size: 2vw;
+      padding: 1%;
+    }
+    .icon img {
+      display: inline;
+      width: 15%;
+      margin: 5%;
+    }
+    }
+    @media screen and (max-width: 480px){
+      .login{
+        width: 70%;
+      }
+      .logingform h1 {
+        font-size: 6vw;
+        margin-top: 10%;
+    }
+    form button{
+      font-size: 3vw;
+      padding: 0%;
+      height: 5vh;
   }
-  .icon img{
+  .icon img {
     display: inline;
-    width: 10%;
+    width: 15%;
     margin: 5%;
   }
-  /* 반응형 */
-  @media screen and (max-width: 1350px) {
+  form .check{
+    margin: 15px 0;
+    font-size: 14px;
+  }
+  .line{
+    display: block;
+  }
+}
+@media screen and (max-width: 320px){
+  .login{
+    width: 70%;
+  }
+  .logingform h1{
+    font-weight: bold;
+  }   
+   form button{
+    font-size: 4vw;
+    padding: 0%;
+    height: 5vh;
+}
+.line{
+  display: block;
+}
+}
