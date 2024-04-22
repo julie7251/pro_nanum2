@@ -20,9 +20,10 @@
     display: flex;
     flex-direction: column; 
    } 
-   /* .tab-nav-wrapper {
-    width: 500px;
-  } */
+   /* 탭메뉴 가로설정 */
+   .tab-nav-wrapper {
+    /* width: 500px; */
+  }
   .FAQ-box .FAQ .FAQ-small-box {
     bottom: auto;
   }
