@@ -1,74 +1,107 @@
 @charset "utf-8";
 /* 민주 */
-.inner {
-  max-width: 1400px;
-  margin: 0 auto;
-}
 .section4 .nanumsns-swiper .swiper-button-next::after {
   display: none;
 }
-.section4 .nanumsns-swiper .swiper-button-prev::after {
-  display: none;
+.section4 .nanumsns-swiper .swiper-button-next img {
+  position: absolute;
+  top: 15px;
+  right: 1100px;
 }
+
 .section4 {
+  display: flex;
   margin-top: 100px;
   margin-bottom: 100px;
   width: 100%;
   height: 100%;
   position: relative;
 }
-.section4 h1 {
-  font-size: 2vw;
-  text-align: center;
-  font-weight: bold;
-  margin-bottom: 5%;
+.section4 .snstext {
+  padding-top: 5%;
+  width: 45%;
+}
+.section4 .snstext a img {
+  padding-top: 2%;
+  width: 13%;
+}
+.section4 .snstext h1 {
+  font-size: 3vw;
+  font-weight: 800;
 }
 .section4 .nanumsns-swiper {
-  width: 100%;
+  width: 50%;
 }
-.section4-sns {
-  display: none;
-}
-.section6 {
-  width: 100%;
+.section4 .snstext a .more {
   margin: 0 auto;
+  display: block;
+  border: none;
+  background-color: #134aa9;
+  font-size: 1vw;
+  font-weight: 800;
+  color: #fff;
+  padding: 1% 2%;
+  border-radius: 50px;
+  cursor: pointer;
+  line-height: 2;
 }
-.section6 img {
-  width: 100%;
-}
-.takejoin{
+.snsnanum {
   display: none;
 }
 /* ===================================================== */
-/* 푸터 */
+/* 움직이는 텍스트 */
+.section5 .content img {
+  width: 85%;
+}
+.animated-title {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  padding: 3%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.animated-title .track {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 60s linear infinite;
+}
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+@media (hover: hover) and (min-width: 700px) {
+  .animated-title .content {
+    -webkit-transform: translateY(calc(100% - 8rem));
+    transform: translateY(calc(100% - 8rem));
+  }
+}
+/* ===================================================== */
 footer {
-  margin: 0 auto;
   width: 100%;
   height: 300px;
   background-color: #333;
   color: #fff;
+}
+footer .clearboth {
   clear: both;
 }
 footer .right {
   float: left;
   margin: 30px;
-  padding: 20px;
 }
 footer .right h1 {
+  font-family: "UhBeeSe_hyun";
+  font-size: 3vw;
+  text-align: left;
   padding: 20px;
-
-  font-family: "UhBeeSe_hyun";
-  font-size: 3vw;
-  text-align: left;
-  color: #fff;
 }
-footer .right h1 span {
-  font-family: "UhBeeSe_hyun";
-  font-size: 3vw;
-  text-align: left;
-  color: #ffffff79;
-}
-
 footer .right p {
   line-height: 1.5;
   text-align: left;
