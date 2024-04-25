@@ -109,11 +109,13 @@ footer .right p {
 footer .left {
   float: right;
   margin: 30px;
+  margin-top: 5%;
 }
-footer .left i{
+footer .left .tell {
   display: block;
   font-size: 3vw;
   text-align: right;
+  font-family: "KBO-Dia-Gothic_medium";
 }
 footer .left button {
   width: 130px;
@@ -122,6 +124,9 @@ footer .left button {
   background-color: #333;
   border: 1px solid #fff;
   color: #fff;
+}
+footer .line {
+  display: none;
 }
 /* ================================================ */
 /* flying baneer */
@@ -155,15 +160,14 @@ footer .left button {
 }
 /* =================================================== */
 /* 참여하기 */
-
-.takejoin{
+.takejoin {
   width: 100%;
   position: fixed;
   background-color: #fff;
   bottom: 0px;
-  transition: top 0.3s ease-in-out; 
+  transition: top 0.3s ease-in-out;
 }
-.takejoin .heart{
+.takejoin .heart {
   width: 80%;
   height: 100px;
   background-color: #ff4949;
@@ -171,18 +175,8 @@ footer .left button {
   border: none;
   font-size: 2vw;
 }
-
 /* =================================================== */
 /* 반응형 */
-@media screen and (max-width: 1600px) {
-  .section4 .nanumsns-swiper .swiper-button-next img {
-    right: 900px;
-  }
-  .section4 .snstext .more {
-    left: 295px;
-  }
-}
-/* ===================================================== */
 @media screen and (max-width: 859px) {
   footer {
     height: 500px;
@@ -194,10 +188,16 @@ footer .left button {
     text-align: left;
     padding: 20px;
   }
+  footer .right h1 span {
+    font-family: "UhBeeSe_hyun";
+    font-size: 5vw;
+    text-align: left;
+    color: #ffffff79;
+  }
   footer .left {
     float: left;
   }
-  footer .left i{
+  footer .left .tell {
     display: block;
     font-size: 5vw;
     text-align: left;
@@ -211,47 +211,40 @@ footer .left button {
     color: #fff;
   }
   footer .line {
+    display: block;
     width: 100%;
     height: 2px;
     background-color: #fff;
     margin-top: 10%;
   }
+  .section6 img {
+    width: 100%;
+  }
 }
 /* ===================================================== */
 @media screen and (max-width: 768px) {
-  .section4 .snstext {
-    display: block;
-    width: 100%;
-  }
-  .section4 .snstext h1 {
-    font-size: 5vw;
-    font-weight: 800;
-  }
-  .section4 .nanumsns-swiper {
+  .section4 {
     display: none;
   }
-  .section4 .snstext a .more {
+
+  .section4-sns {
     display: block;
-    font-size: 3vw;
-    margin: 0 auto;
-    padding: 1% 2%;
-    line-height: 2;
+    margin-top: 15%;
+  }
+  .section4-sns h1{
+    font-size: 4vw;
+    font-weight: bold;
   }
   .snsnanum {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
-    margin-top: 5%;
     margin-bottom: 10%;
   }
   .snsnanum img {
     width: 40%;
     padding: 2%;
-  }
-  .section5 .animated-title {
-    padding: 6%;
-    padding-top: 2%;
   }
   footer {
     height: 450px;
@@ -263,95 +256,72 @@ footer .left button {
     text-align: left;
     padding: 20px;
   }
+  footer .right h1 span {
+    font-family: "UhBeeSe_hyun";
+    font-size: 5vw;
+    text-align: left;
+    color: #ffffff79;
+  }
   footer .left {
     float: left;
+    margin: 8%;
+    margin-top: -3%;
   }
-  footer .left i{
+  footer .left .tell {
     display: block;
-    font-size: 4vw;
+    font-size: 5vw;
     text-align: left;
   }
-  }
-  footer .left button {
-    width: 130px;
-    height: 50px;
-    margin: 20px 5px;
-    background-color: #333;
-    border: 1px solid #fff;
-    color: #fff;
-  }
-  footer .line {
-    width: 100%;
-    height: 2px;
-    background-color: #fff;
-    margin-top: 10%;
-  }
-/* ==================================================== */
-@media  screen and (max-width: 480px){
-/* 참여하기 */
-
-.takejoin{
-  width: 100%;
-  position: fixed;
-  background-color: #fff;
-  bottom: 0px;
-  transition: top 0.3s ease-in-out; 
 }
-
-.takejoin .heart{
-  width: 80%;
-  height: 100px;
-  background-color: #ff4949;
+footer .left button {
+  width: 130px;
+  height: 50px;
+  margin: 20px 5px;
+  background-color: #333;
+  border: 1px solid #fff;
   color: #fff;
-  border: none;
-  font-size: 5vw;
 }
+footer .line {
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  margin-top: 10%;
+  margin: 50 auto;
 }
 /* ==================================================== */
-@media screen and (max-width: 320px) {
-  .section4 {
-    width: 100%;
-    height: 100px;
-  }
-  .section4 .snstext h1 {
-    font-size: 8vw;
-    font-weight: 800;
-  }
-  .section4 .snstext a img {
-    padding-top: 2%;
-    width: 18%;
-  }
-  .section4 .snstext a .more {
-    font-size: 5vw;
-    padding: 1% 2%;
-    line-height: 2;
-  }
+@media screen and (max-width: 480px) {
+  /* 참여하기 */
   .snsnanum {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    margin-top: -15%;
+  }
+  .takejoin {
+    display: block;
+    z-index: 99999;
     width: 100%;
+    position: fixed;
+    background-color: #fff;
+    bottom: 0px;
+    transition: top 0.3s ease-in-out;
   }
-
-  .snsnanum img {
-    width: 50%;
-    padding: 2%;
-  }
-  .section5 .content img {
-    width: 150%;
-  }
-  .section5 .animated-title {
-    padding: 8%;
-    padding-top: 2%;
-  }
-  footer {
+  .takejoin .heart {
+    display: block;
     width: 100%;
-    height: 410px;
+    height: 50px;
+    background-color: #134aa9;
+    color: #fff;
+    border: none;
+    font-size: 5vw;
   }
   footer .right h1 {
     font-family: "UhBeeSe_hyun";
-    font-size: 10vw;
+    font-size: 8vw;
     text-align: center;
+  }
+  footer .right h1 span {
+    font-family: "UhBeeSe_hyun";
+    font-size: 8vw;
+    text-align: left;
+    color: #ffffff79;
   }
   footer .left button {
     width: 130px;
@@ -365,13 +335,74 @@ footer .left button {
     line-height: 1.5;
     font-size: 13px;
   }
-  footer .left{
-      margin: 0 auto;
+  footer .left {
+    margin: 0 auto;
     text-align: center;
     width: 100%;
   }
-  footer .left i {
-    font-size: 10vw;
+  footer .left .tell {
+    font-size: 8vw;
+    text-align: center;
+  }
+  .section6 img {
+    width: 100%;
+  }
+}
+/* ==================================================== */
+@media screen and (max-width: 320px) {
+  .snsnanum {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10%;
+  }
+  .snsnanum img {
+    width: 50%;
+    padding: 2%;
+  }
+  .section4 {
+    width: 100%;
+    height: 100px;
+  }
+  .section4 .snstext h1 {
+    font-size: 8vw;
+    font-weight: 800;
+  }
+  footer {
+    width: 100%;
+    height: 410px;
+  }
+  footer .right h1 {
+    font-family: "UhBeeSe_hyun";
+    font-size: 8vw;
+    text-align: center;
+  }
+  footer .right h1 span {
+    font-family: "UhBeeSe_hyun";
+    font-size: 8vw;
+    text-align: left;
+    color: #ffffff79;
+  }
+  footer .left button {
+    width: 130px;
+    height: 50px;
+    margin-top: 20px;
+    background-color: #333;
+    border: 1px solid #fff;
+    color: #fff;
+  }
+  footer .right p {
+    line-height: 1.5;
+    font-size: 13px;
+  }
+  footer .left {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+  }
+  footer .left .tell {
+    font-size: 8vw;
     text-align: center;
   }
   footer .line {
