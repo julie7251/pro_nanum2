@@ -1,49 +1,44 @@
 @charset "utf-8";
 /* 민주 */
+.inner {
+  max-width: 1400px;
+  margin: 0 auto;
+}
 .section4 .nanumsns-swiper .swiper-button-next::after {
   display: none;
 }
-.section4 .nanumsns-swiper .swiper-button-next img {
+.snsImage-btn1 {
   position: absolute;
   top: 15px;
-  right: 1100px;
+  right: 880px;
 }
-
 .section4 {
   display: flex;
   margin-top: 100px;
   margin-bottom: 100px;
-  width: 100%;
+  width: 80%;
   height: 100%;
   position: relative;
 }
 .section4 .snstext {
-  padding-top: 5%;
-  width: 45%;
+  padding-top: 10%;
+  width: 40%;
 }
 .section4 .snstext a img {
   padding-top: 2%;
-  width: 13%;
+  width: 18%;
 }
 .section4 .snstext h1 {
-  font-size: 3vw;
+  font-size: 2vw;
   font-weight: 800;
 }
 .section4 .nanumsns-swiper {
-  width: 50%;
+  width: 60%;
 }
-.section4 .snstext a .more {
-  margin: 0 auto;
-  display: block;
-  border: none;
-  background-color: #134aa9;
-  font-size: 1vw;
-  font-weight: 800;
-  color: #fff;
-  padding: 1% 2%;
-  border-radius: 50px;
-  cursor: pointer;
-  line-height: 2;
+hr {
+  background: #eee;
+  height: 1px;
+  border: 0;
 }
 .snsnanum {
   display: none;
@@ -51,14 +46,15 @@
 /* ===================================================== */
 /* 움직이는 텍스트 */
 .section5 .content img {
-  width: 85%;
+  width: 100%;
 }
 .animated-title {
+
   position: relative;
   width: 100%;
   max-width: 100%;
   height: auto;
-  padding: 3%;
+  padding: 2%;
   overflow-x: hidden;
   overflow-y: hidden;
 }
@@ -73,7 +69,10 @@
     transform: translateX(0);
   }
   to {
-    transform: translateX(-50%);
+    transform: translateX(-100%);
+  }
+  from {
+    transform: translateX(0%);
   }
 }
 @media (hover: hover) and (min-width: 700px) {
@@ -83,25 +82,35 @@
   }
 }
 /* ===================================================== */
+/* 푸터 */
 footer {
+  margin: 0 auto;
   width: 100%;
   height: 300px;
   background-color: #333;
   color: #fff;
-}
-footer .clearboth {
   clear: both;
 }
 footer .right {
   float: left;
   margin: 30px;
+  padding: 20px;
 }
 footer .right h1 {
+  padding: 20px;
+
   font-family: "UhBeeSe_hyun";
   font-size: 3vw;
   text-align: left;
-  padding: 20px;
+  color: #fff;
 }
+footer .right h1 span {
+  font-family: "UhBeeSe_hyun";
+  font-size: 3vw;
+  text-align: left;
+  color: #ffffff79;
+}
+
 footer .right p {
   line-height: 1.5;
   text-align: left;
@@ -111,6 +120,10 @@ footer .left {
   margin: 30px;
   margin-top: 5%;
 }
+footer .left img{
+  width: 20%;
+}
+
 footer .left .tell {
   display: block;
   font-size: 3vw;
@@ -135,7 +148,7 @@ footer .line {
   position: fixed;
   right: 30px;
   top: 100px;
-  z-index: 9999;
+  z-index: 99999;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -166,18 +179,55 @@ footer .line {
   background-color: #fff;
   bottom: 0px;
   transition: top 0.3s ease-in-out;
+  display: none;
 }
 .takejoin .heart {
-  width: 80%;
-  height: 100px;
-  background-color: #ff4949;
+  width: 100%;
+  background-color: #134aa9;
   color: #fff;
   border: none;
   font-size: 2vw;
+  display: none;
 }
 /* =================================================== */
 /* 반응형 */
+@media screen and (max-width: 1300px) {
+  .section4 .nanumsns-swiper .swiper-button-next img {
+    right: 650px;
+  }
+  .section4 .snstext {
+    padding-top: 15%;
+  }
+  .animated-title {
+    padding: 4%;
+    margin-top: -4%;
+    margin-bottom: 0%;
+  }
+  .top-button {
+    display: none;
+  }
+  footer .line {
+    display: none;
+  }
+  footer .left img{
+    width: 15%;
+  }
+}
+/* ===================================================== */
 @media screen and (max-width: 859px) {
+  .section4 .nanumsns-swiper .swiper-button-next img {
+    display: none;
+  }
+  .section4 .snstext {
+    padding-top: 30%;
+  }
+  .section4 .snstext a img {
+    width: 20%;
+  }
+  .section4 .snstext h1 {
+    font-size: 3vw;
+    font-weight: 800;
+  }
   footer {
     height: 500px;
     width: 100%;
@@ -217,23 +267,23 @@ footer .line {
     background-color: #fff;
     margin-top: 10%;
   }
-  .section6 img {
-    width: 100%;
-  }
 }
+
 /* ===================================================== */
 @media screen and (max-width: 768px) {
-  .section4 {
-    display: none;
+  .section5 .content img {
+    width: 150%;
   }
-
-  .section4-sns {
+  .section4 .snstext {
     display: block;
-    margin-top: 15%;
+    width: 100%;
   }
-  .section4-sns h1{
-    font-size: 4vw;
-    font-weight: bold;
+  .section4 .snstext h1 {
+    font-size: 5vw;
+    font-weight: 800;
+  }
+  .section4 .nanumsns-swiper {
+    display: none;
   }
   .snsnanum {
     display: flex;
@@ -245,6 +295,11 @@ footer .line {
   .snsnanum img {
     width: 40%;
     padding: 2%;
+  }
+  .section5 .animated-title {
+    padding: 6%;
+    padding-top: 4%;
+  
   }
   footer {
     height: 450px;
@@ -268,6 +323,7 @@ footer .line {
     margin-top: -3%;
   }
   footer .left .tell {
+
     display: block;
     font-size: 5vw;
     text-align: left;
@@ -291,8 +347,19 @@ footer .line {
 /* ==================================================== */
 @media screen and (max-width: 480px) {
   /* 참여하기 */
+  .section4 .snstext h1 {
+    font-size: 8vw;
+    font-weight: 800;
+  }
   .snsnanum {
     margin-top: -15%;
+  }
+  .section5 .content img {
+    width: 250%;
+  }
+  .section5 .animated-title {
+    padding: 10%;
+    margin-top: -10%;
   }
   .takejoin {
     display: block;
@@ -303,6 +370,7 @@ footer .line {
     bottom: 0px;
     transition: top 0.3s ease-in-out;
   }
+
   .takejoin .heart {
     display: block;
     width: 100%;
@@ -344,23 +412,12 @@ footer .line {
     font-size: 8vw;
     text-align: center;
   }
-  .section6 img {
-    width: 100%;
+  footer .left img{
+    width: 10%;
   }
 }
 /* ==================================================== */
 @media screen and (max-width: 320px) {
-  .snsnanum {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 10%;
-  }
-  .snsnanum img {
-    width: 50%;
-    padding: 2%;
-  }
   .section4 {
     width: 100%;
     height: 100px;
@@ -369,6 +426,29 @@ footer .line {
     font-size: 8vw;
     font-weight: 800;
   }
+  .section4 .snstext a img {
+    padding-top: 2%;
+    width: 18%;
+  }
+  .snsnanum {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10%;
+  }
+  .snsnanum img {
+    width: 80%;
+    padding: 2%;
+  }
+  .section5 .content img {
+    width: 350%;
+  }
+  .section5 .animated-title {
+    padding: 12%;
+    padding-top: 8%;
+  }
+  
   footer {
     width: 100%;
     height: 410px;

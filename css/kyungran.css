@@ -4,20 +4,20 @@
 .section2 {
   max-width: 1400px;
   margin: 0 auto;
+  margin-top: 150px;
+  margin-bottom: 150px;
 }
 .section-tite {
   display: block;
-  font-size: 28px;
-  font-weight: 600;
-  padding-top: 150px;
-  padding-bottom: 22px;
+  font-size: 36px;
+  padding-bottom: 27px;
+  font-weight: bold;
 }
 /* 카테고리 */
 .tab-nav-wrapper {
   overflow: hidden;
-  /* width: 500px; */
   width: 674px;
-  margin: auto;
+  margin: 0 auto;
 }
 .tab-nav {
   display: flex;
@@ -29,19 +29,19 @@
 }
 .tab-nav span {
   /* display: none; */
-  padding-right: 100px;
-  background-color: #1e6bf1;
+  padding-right: 36px;
 }
 .tab-nav a {
   display: block;
   padding: 11px 14px;
   border-radius: 50px;
   border: 1px solid #e8e8e8;
-  color: black;
+  color: #292929;
   text-decoration: none;
 }
-.tab-nav a:hover, .tab-nav a.active {
-  background-color:  #1e6bf1;
+.tab-nav a:hover,
+.tab-nav a.active {
+  background-color: #1e6bf1;
   color: #fff;
   transition: all 0.3s;
 }
@@ -50,7 +50,8 @@
   position: relative;
   display: flex;
   justify-content: flex-end;
-  padding: 10px 0;
+  padding: 4px 0 14px;
+  gap: 4px;
 }
 /* 토글기능 */
 /* .area-list.active {
@@ -85,18 +86,14 @@
   border: 0;
   background-color: transparent;
   line-height: 19px;
-  padding: 5px 17px;
-  border: 1px solid #e8e8e8;
-}
-.toggle-bt1:hover .area-list {
-  display: block;
+  padding: 5px 16px;
 }
 .area-list {
   display: none;
   position: absolute;
   background-color: #fff;
-  top: 57px;
-  right: 115px;
+  top: 34px;
+  right: 118px;
   transform: translateX(-50%);
   border: 1px solid #ddd;
   box-shadow: 0 3px 6px 0 rgba(0 0 0 / 16%);
@@ -105,9 +102,18 @@
   min-width: 97px;
   overflow-y: scroll;
   z-index: 99;
+  border-radius: 10px;
 }
 .area-list.active {
   display: block;
+}
+.area-list:hover {
+  cursor: pointer;
+}
+.area-list li:hover {
+  color: #1e6bf1;
+  cursor: pointer;
+  background-color: #f1f3f7;
 }
 .area-list > li {
   position: relative;
@@ -122,7 +128,7 @@
   display: inline-block;
   width: 10px;
   height: 6px;
-  background: url(../images/kyungran/toggle-arrow2.png) no-repeat;
+  background: url("../images/kyungran/toggle-arrow2.png") no-repeat;
   background-position: 0px 0px;
   margin-left: 6px;
   vertical-align: 2px;
@@ -139,14 +145,13 @@
   background-color: transparent;
   line-height: 19px;
   padding: 5px 16px;
-  border: 1px solid #e8e8e8;
 }
 .monthly-list {
   display: none;
   position: absolute;
   background-color: #fff;
-  top: 57px;
-  right: 34.5px;
+  top: 34px;
+  right: 39.5px;
   transform: translateX(-50%);
   border: 1px solid #ddd;
   box-shadow: 0 3px 6px 0 rgba(0 0 0 / 16%);
@@ -155,9 +160,18 @@
   min-width: 86px;
   overflow-y: scroll;
   z-index: 99;
+  border-radius: 10px;
 }
 .monthly-list.active {
   display: block;
+}
+.monthly-list:hover {
+  cursor: pointer;
+}
+.monthly-list li:hover {
+  color: #1e6bf1;
+  cursor: pointer;
+  background-color: #f1f3f7;
 }
 .monthly-list > li {
   position: relative;
@@ -180,13 +194,16 @@
   background-color: transparent;
   line-height: 19px;
   padding: 5px 14px;
-  border: 1px solid #e8e8e8;
+}
+.toggle-bt3:hover {
+  background-color: #f3f8ff;
+  transition: 0.1s;
 }
 .order-list {
   display: none;
   position: absolute;
   background-color: #fff;
-  top: 57px;
+  top: 34px;
   right: -41px;
   transform: translateX(-50%);
   border: 1px solid #ddd;
@@ -195,9 +212,18 @@
   max-height: 202px;
   min-width: 81px;
   z-index: 99;
+  border-radius: 10px;
 }
 .order-list.active {
   display: block;
+}
+.order-list:hover {
+  cursor: pointer;
+}
+.order-list li:hover {
+  color: #1e6bf1;
+  cursor: pointer;
+  background-color: #f1f3f7;
 }
 .order-list > li {
   position: relative;
@@ -213,16 +239,51 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 25px;
+  padding-bottom: 43px;
   gap: 20px;
 }
 .img-box {
   position: relative;
   display: block;
-min-width: 100px;
+  min-width: 100px;
   height: 100%;
   text-align: left;
 }
+.img-box > a {
+  position: relative;
+}
+.img-box a::after {
+  opacity: 1;
+}
+.img-box a:hover::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: url("../images/kyungran/잔여\ 10명\ 모집\ 15명.png") no-repeat;
+  bottom: 0;
+  /* top: 55px; */
+  top: 0px;
+  left: 50%;
+  width: 198px;
+  transform: translateX(-50%);
+  transition: all 0.2s;
+}
+.img-box > a > .img1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 10px;
+}
+.img-box > a:hover .img1 {
+  content: "";
+  filter: brightness(0.4);
+  transition: all 0.2s;
+}
+.img-box > a:hover span:nth-child(n + 3) {
+  color: #3b3b3b;
+  transition: all 0.2s;
+}
+
 .img-box > a > img {
   position: relative;
   width: 100%;
@@ -233,29 +294,27 @@ min-width: 100px;
     filter: brightness(60%);
     transition:  all 0.2s ; 
 } */
-.img-box > a:hover .hart-icon{
-    transform: translate( 0 , -10px ) !important;
-    transition:  all 0.2s ease-out; 
-}
- .img-box > a:hover span {
- /* color:rgb(19, 74, 169) !important; */
- color:rgb(156, 156, 156) !important;
- /* color:#0042b5 !important; */
-} 
+/* .img-box > a:hover .hart-icon {
+  transform: translate(0, -10px) !important;
+  transition: all 0.2s ease-out;
+} */
+/* .img-box > a:hover span {
+  /* color:rgb(19, 74, 169) !important; */
+/* color: rgb(156, 156, 156) !important; */
+/* color:#0042b5 !important; */
 /* 내용 */
 
 .list-wrap > .img-box > a > span {
   position: relative;
-  display: block; 
-   overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    word-break: break-all;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
   padding: 8px 0 0px;
-  letter-spacing: -1px;
+  letter-spacing: -0.6px;
   color: #1a1a1aa3;
   font-size: 15px;
-
 }
 .list-wrap > .img-box > a > span:nth-child(2) {
   width: 100%;
@@ -263,7 +322,7 @@ min-width: 100px;
   white-space: nowrap;
   text-overflow: ellipsis;
   word-break: break-all;
-  color: #202020;
+  color: #3b3b3b;
   font-size: 17px;
 }
 /* 찜하기 */
@@ -275,39 +334,42 @@ min-width: 100px;
   cursor: pointer;
   width: 39px;
   height: 35px;
-background: url("../images/kyungran/hart-icon_gray.svg") no-repeat center;
-  z-index: 99;
+  background: url("../images/kyungran/hart-icon_gray.svg") no-repeat center;
+  z-index: 9;
 }
 
 .img-box .hart-icon.act {
   background: url("../images/kyungran/full-hart-icon.svg") no-repeat center;
+  transition: 0.1s;
 }
 .pgn {
   position: relative;
   display: block;
-  padding: 50px 0;
   margin: auto;
 }
-.pgn > span {
-  padding-right: 20px;
-}
-.pgn > span:nth-child(1) {
-  font-weight: 800;
-  color: #1e6bf1;
+.pgn > button {
+  position: relative;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 13px;
+  padding: 15px 90px;
+  line-height: 10px;
+  border: 1px solid #cfcfcf;
+  border-radius: 6px;
+  background-color: #fff;
 }
 /* 섹션3 */
 .section3 {
-  background-color: #F0F4FF;
-  /* background-color: #f0f4ff; */
+  position: relative;
+  background-color: #f0f4ff;
 }
 .section3-inner {
   display: flex;
   justify-content: space-between;
   gap: 50px;
   margin: auto;
-  max-width: 1400px;
-  padding: 56px 0;
-  height: 353px;
+  max-width: 1300px;
+  padding: 51px 0;
 }
 /* 커뮤니티 */
 .section3 .CM-box {
@@ -317,12 +379,14 @@ background: url("../images/kyungran/hart-icon_gray.svg") no-repeat center;
   width: 100%;
   min-width: 276px;
   background-color: #fff;
-  border: 1px solid #ddd;
+  /* border: 1px solid #ddd; */
+  padding: 40px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px;
   border-radius: 10px;
 }
 .CM-box .CM span {
-  font-size: 28px;
-  font-weight: 600;
+  font-size: 36px;
+  font-weight: bold;
 }
 .CM-box .CM .plus-icon {
   position: absolute;
@@ -334,21 +398,23 @@ background: url("../images/kyungran/hart-icon_gray.svg") no-repeat center;
   outline: none;
   background: url("../images/kyungran/pluse-icon-set.png") no-repeat 0px 0px;
 }
-.CM-box .CM > span > a:hover .plus-icon {
+.CM-box .CM .plus-icon:hover {
   background: url("../images/kyungran/pluse-icon-set.png") no-repeat bottom;
-transition: all 0.2s;
 }
 .CM-box .CM li {
   font-size: 22px;
-  line-height: 41px;
-  padding-top: 8px;
+  line-height: 35px;
+  padding-top: 21px;
   padding-left: 17px;
-  color: #1e6bf1;
+  color: #1a1a1aa3;
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   word-break: break-all;
+}
+.CM-box .CM li:nth-child(2) {
+  padding-top: 19px;
 }
 
 /* 자주 묻는 질문 */
@@ -359,50 +425,54 @@ transition: all 0.2s;
   width: 100%;
   min-width: 276px;
   background-color: #fff;
-  border: 1px solid #ddd;
+  /* border: 1px solid #ddd; */
+  padding: 40px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px;
   border-radius: 10px;
   font-size: 22px;
 }
 .FAQ-box .FAQ span {
-  font-size: 28px;
-  font-weight: 600;
+  font-size: 36px;
+  font-weight: bold;
 }
 .FAQ-box .FAQ .plus-icon {
   position: absolute;
   top: 15px;
   right: 20px;
-    width: 54px;
-    height: 54px;
-    border: none;
-    outline: none;
-    background: url("../images/kyungran/pluse-icon-set.png") no-repeat 0px 0px;
-  }
-    .FAQ-box .FAQ > span > a:hover .plus-icon {
-        background: url("../images/kyungran/pluse-icon-set.png") no-repeat bottom;
-      
-      }
+  width: 54px;
+  height: 54px;
+  border: none;
+  outline: none;
+  background: url("../images/kyungran/pluse-icon-set.png") no-repeat 0px 0px;
+}
+.FAQ-box .FAQ .plus-icon:hover {
+  background: url("../images/kyungran/pluse-icon-set.png") no-repeat bottom;
+}
 .FAQ-box .FAQ .FAQ-small-box {
   position: absolute;
   width: 100%;
   bottom: 0;
   left: 0;
-  padding: 15px 33px;
+  padding: 0px 45px 20px 46px;
   font-size: 22px;
+  color: #3b3b3b;
   border-radius: 0px 0px 10px 10px;
   background-color: #fafafa;
-  line-height: 66px;
+  line-height: 59px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   word-break: break-all;
 }
-.FAQ-box .FAQ .FAQ-small-box li:nth-child(1) {
-  border-bottom: 1px solid #ddd;
+.FAQ-box .FAQ .FAQ-small-box li:nth-last-child(1) {
+  border-bottom: none;
 }
 .FAQ-box .FAQ .FAQ-small-box li {
-   width: 100%;
+  width: 100%;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   word-break: break-all;
+  border-bottom: 1px solid #ddd;
+  padding: 9px;
 }
