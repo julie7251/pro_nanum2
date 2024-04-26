@@ -1,16 +1,19 @@
 // 민주
 window.addEventListener("load", function () {
-  //스와이퍼
   var swiper = new Swiper(".nanumsns", {
     loop: true,
-    slidesPerView: 3,
-    spaceBetween: 300,
-    centeredSlides: true,
-    navigation: {
-      nextEl: ".swiper-button-next",
+    // slidesPerView: 4,
+    // spaceBetween: 0,
+    breakpoints: {
+      1300: {
+        slidesPerView: 4,
+      },
+      768: {
+        slidesPerView: 3,
+      },
     },
- 
-});
+    // centeredSlides: true,
+  });
 
   // 스크롤 이벤트를 감지하여 메뉴의 상태를 변경하는 함수
   window.addEventListener("scroll", function () {
@@ -22,5 +25,14 @@ window.addEventListener("load", function () {
       menu.style.bottom = "-50px"; // 메뉴를 숨깁니다.
     }
   });
-
+  //배너
+  var swiper = new Swiper(".nanumbanner", {
+    autoplay: {
+      delay: 2000, // 슬라이드 간격을 여기에 밀리초 단위로 설정합니다.
+    },
+    loop: true,
+    slidesPerView: 2,
+    spaceBetween: 0,
+    // centeredSlides: true,
+  });
 });
