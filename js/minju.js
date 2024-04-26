@@ -34,5 +34,13 @@ window.addEventListener("load", function () {
     slidesPerView: 2,
     spaceBetween: 0,
     // centeredSlides: true,
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+      },
+      0: {
+        slidesPerView: 1,
+      },
+    },
   });
 });
