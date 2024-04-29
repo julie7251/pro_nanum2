@@ -201,7 +201,6 @@ nav {
   top: 50%;
   left: 50%;
 }
-
 .m-bt span:nth-child(3) {
   transform: translateY(6px) translateX(-50%); /* 세 번째 세로 선 위치 조절 */
 }
@@ -276,6 +275,7 @@ nav {
 .m-log > li:hover a {
   color: #134aa9;
 }
+
 /* 햄버거 눌렀을 때 메뉴 호버 */
 .nav-mb-gnb li:hover a {
   background-color: #f0f4ff;
@@ -518,8 +518,51 @@ nav {
 }
 @media screen and (max-width: 450px) {
   .mb-visual-img{
-    margin: 30px;
+    margin-top: 30px;
   }
+  .counter-wrapper {      
+    padding: 25px 0;
+   }
+   .counter-wrapper {
+     bottom: 2%;
+   }
+   
+ .sec1-main-text h4 {
+  font-size: 22px;
+}
+.section1 {
+padding: 12% 0 8%;
+}
+.sec1-main-text h4{
+font-size: 22px;
+top: -60%;
+padding: 20px;
+}
+.service3-text{
+top: 25%;
+left: 8px;
+padding: 0 5% 0 5% ;
+}
+h3 {
+display: none;
+}
+.service figcaption {
+display: none;
+}
+.service-box{
+padding-top: 10px;
+}
+.service3-text span{
+font-size: 14px;
+}
+.service3-text p{
+display: none;
+}
+.sb-img-title1, .sb-img-title2{
+font-size: 14px;
+padding: 5px;
+height:30px;
+}
 }
 @media screen and (max-width: 390px) {
   .count-title {
