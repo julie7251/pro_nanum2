@@ -4,8 +4,10 @@
 .section2 {
   max-width: 1100px;
   margin: 0 auto;
-  margin-top: 150px;
-  margin-bottom: 150px;
+  /* margin-top: 150px;
+  margin-bottom: 150px; */
+  margin-top: 135px;
+    margin-bottom: 110px;
 }
 .section-tite {
   display: block;
@@ -396,7 +398,9 @@
   gap: 50px;
   margin: auto;
   max-width: 1300px;
-  padding: 51px 0;
+  /* padding: 51px 0; */
+    padding: 84px 0;
+    
 }
 /* 커뮤니티 */
 .section3 .CM-box,
