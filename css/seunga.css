@@ -60,6 +60,7 @@ header {
   width: 100%; /* 전체 너비 차지 */
   height: auto;
   background-color: #fff; 
+  /* background-color: red; */
   /* background-color: rgba(255, 255, 255, 0.7); */
   z-index: 99999999999; /* 네비게이션 바가 다른 요소 위에 올라가도록 z-index 설정 */
   box-shadow: -1px 2px 10px 4px rgba(0, 0, 0, 0.05); /* 네비게이션 바의 box-shadow 효과 */
@@ -289,7 +290,7 @@ nav {
   gap: 20%;
   padding: 2.5%;
   position: absolute;
-  bottom: 14%;
+  bottom: 2%;
 }
 .counter {
   font-family: "KBO-Dia-Gothic_medium";
@@ -323,7 +324,7 @@ nav {
   display: flex; /* 플렉스 박스 사용 */
   justify-content: center; /* 수평 가운데 정렬 */
   align-items: center; /* 수직 가운데 정렬 */
-  padding: 20px 0 20px 0;
+  /* padding: 20px 0 20px 0; */
 }
 .sec1-inner {
   width: 100%;
@@ -446,10 +447,6 @@ nav {
   .m-bt {
     display: block;
   }
-  /* 모바일메뉴 */
-  .m-bt {
-    display: block;
-  }
   /* 카운트 */
   .counter-wrapper {
     gap: 15%;
@@ -493,7 +490,6 @@ nav {
   .visual-img {
     display: none;
   }
-
   .counter-wrapper {
     gap: 10%;
   }
@@ -518,6 +514,11 @@ nav {
   }
   .sec1-title p {
     font-size: 18px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .mb-visual-img{
+    margin: 30px;
   }
 }
 @media screen and (max-width: 390px) {
