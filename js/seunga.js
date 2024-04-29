@@ -35,11 +35,15 @@ document.addEventListener("DOMContentLoaded", function () {
       this.classList.remove("ani");
       // 메뉴가 나타날 때 스크롤이 되지 않도록 설정합니다.
       htmlRoot.classList.remove("active");
+      // top-nav의 이미지가 보이도록 설정합니다.
+      document.querySelector(".top-nav img").style.visibility = "visible";
     } else {
       // 햄버거 버튼을 눌렀을 때 x가 사라지도록 클래스를 제거합니다.
       this.classList.add("ani");
       // 메뉴가 나타날 때 스크롤이 되지 않도록 설정합니다.
       htmlRoot.classList.add("active");
+      // top-nav의 이미지가 안 보이도록 설정합니다.
+      document.querySelector(".top-nav img").style.visibility = "hidden";
     }
   });
 

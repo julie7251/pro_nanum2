@@ -53,22 +53,16 @@ a {
 /* =======================================================승아 */
 /* 상당로고 이미지 */
 /* 헤더 */
+/* 헤더 */
 header {
   position: fixed; /* 네비게이션 바가 항상 화면 상단에 고정될 수 있도록 */
   top: 0; /* 화면의 맨 위에 위치 */
   width: 100%; /* 전체 너비 차지 */
-  background-color: #fff; /* 네비게이션 바의 배경색으로 설정 */
+  height: auto;
+  background-color: #fff; 
+  /* background-color: rgba(255, 255, 255, 0.7); */
   z-index: 99999999999; /* 네비게이션 바가 다른 요소 위에 올라가도록 z-index 설정 */
   box-shadow: -1px 2px 10px 4px rgba(0, 0, 0, 0.05); /* 네비게이션 바의 box-shadow 효과 */
-}
-
-header img {
-  width: 180px;
-  display: inline-block;
-  position: absolute;
-  left: 30px; /* 왼쪽 여백 추가 */
-  top: 50%;
-  transform: translateY(-50%); /* 수직 중앙 정렬 */
 }
 
 /* 네비게이션 바 */
@@ -79,9 +73,16 @@ nav {
   padding: 30px;
   position: relative; /* 헤더와의 상대적 위치 설정 */
   display: block;
-  /* z-index: 9999; */
-
   margin: 0 auto;
+}
+.top-nav img {
+  width: 180px;
+  display: inline-block;
+  position: absolute;
+  left: 30px; /* 왼쪽 여백 추가 */
+  top: 30%;
+  margin: 20px;
+  transform: translateY(-50%); /* 수직 중앙 정렬 */
 }
 /* 상단메뉴 */
 .top-menu {
@@ -125,7 +126,7 @@ nav {
 .visual-img {
   width: 100%;
   height: auto;
-  /* margin: 40px auto; */
+  margin: 80px auto;
 }
 
 /* 모바일 비주얼이미지 */
@@ -153,10 +154,10 @@ nav {
 .m-bt {
   display: none;
   position: absolute;
-  top: 35px;
+  top: 30px;
   bottom: 0;
   margin: auto;
-  right: 35px;
+  right: 30px;
   width: 28px;
   height: 15px;
   background-color: transparent;
@@ -267,7 +268,8 @@ nav {
   color: #333;
   font-family: "KBO-Dia-Gothic_light", sans-serif;
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
+  /* color: red; */
 }
 
 .m-log > li:hover a {
@@ -277,7 +279,6 @@ nav {
 .nav-mb-gnb li:hover a {
   background-color: #f0f4ff;
 }
-
 .counter-wrapper {
   width: 100%;
   height: auto;
@@ -288,7 +289,7 @@ nav {
   gap: 20%;
   padding: 2.5%;
   position: absolute;
-  bottom: 1%;
+  bottom: 14%;
 }
 .counter {
   font-family: "KBO-Dia-Gothic_medium";
@@ -309,6 +310,7 @@ nav {
   margin-top: 8%;
   white-space: nowrap;
 }
+
 /* 섹션1-서비스 */
 .section1 {
   position: relative;
@@ -408,13 +410,21 @@ nav {
   }
 }
 @media screen and (max-width: 768px) {
-  /* 상단로고 이미지 */
-  .top-nav {
+  header {
+    top: 0; /* 화면의 맨 위에 위치 */
+    height: 65px;
+  }
+  .m-bt {
+    top: 0;
+  }
+  .top-nav ul {
     display: none;
   }
-  header img {
-    width: 120px;
-    padding: 15px;
+  .top-nav img {
+    width: 130px;
+    /* left: 30px;  */
+    top: 35%;
+    /* margin: 20px; */
   }
   /* 상단메뉴 박스 */
   nav {
@@ -422,7 +432,7 @@ nav {
   }
   /* 상단메뉴 */
   .top-menu {
-    gap: 4%;
+    gap: 6%;
     font-size: 16px;
   }
   .top-menu li:nth-child(5) {
@@ -431,6 +441,10 @@ nav {
   /* 메뉴-log */
   .log {
     font-size: 14px;
+  }
+  /* 모바일메뉴 */
+  .m-bt {
+    display: block;
   }
   /* 모바일메뉴 */
   .m-bt {
@@ -472,6 +486,10 @@ nav {
 }
 /* ========================================================== */
 @media screen and (max-width: 560px) {
+  .top-nav img {
+    width: 115px;
+    left: 10px; 
+  }
   .visual-img {
     display: none;
   }
