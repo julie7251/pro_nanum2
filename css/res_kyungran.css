@@ -40,7 +40,7 @@
 }
 @media (max-width: 1100px) {
   .img-box .hart-icon {
-      bottom: 2.5vw;
+      bottom: 2vw;
   }
 }
 @media all and (max-width: 900px) {
@@ -146,9 +146,6 @@
   }
   .right-toggle {
     padding: 20px 0 11px;
-  }
-  .list-wrap {
-  padding-bottom: 34px;
   }
   .list-wrap > .img-box > a > .span1 {
     font-size: 15px;
