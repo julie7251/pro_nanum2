@@ -1,6 +1,6 @@
 // 경란
 // ================================= tab-nav 슬라이드 기능
-window.addEventListener("load", function () {
+$(document).ready(function () {
   var on = $('.tab-nav').find('.activetop').index();
   console.log(on);
   var options = {
@@ -19,10 +19,9 @@ window.addEventListener("load", function () {
   };
 
   var frame = new Sly('.tab-nav-wrapper', options).init();
-  });
+
 
 // ================================== tab-nav 클릭시 해당 메뉴로
-window.addEventListener("load", function () {
   const tabtitel = $(".tab-nav li a");
   tabtitel.click(function (e) {
     e.preventDefault();
@@ -36,29 +35,6 @@ window.addEventListener("load", function () {
 });
 
 // 우측토글
-// window.addEventListener("load", function () {
-//   // Get the button and list elements
-//   const toggleBt1 = document.getElementById("toggle-bt1");
-//   const areaList = document.getElementById("area-list");
-
-//   const toggleBt2 = document.getElementById("toggle-bt2");
-//   const monthlyList = document.getElementById("monthly-list");
-
-//   const toggleBt3 = document.getElementById("toggle-bt3");
-//   const orderList = document.getElementById("order-list");
-
-//   toggleBt1.addEventListener("click", function () {
-//     areaList.classList.toggle("active");
-//   });
-//   toggleBt2.addEventListener("click", function () {
-//     monthlyList.classList.toggle("active");
-//   });
-//   toggleBt3.addEventListener("click", function () {
-//     orderList.classList.toggle("active");
-//   });
-// });
-
-
 window.addEventListener("load", function () {
   // Get the button and list elements
   const toggleBt1 = document.getElementById("toggle-bt1");

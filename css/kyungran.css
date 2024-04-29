@@ -37,7 +37,7 @@
   border-radius: 50px;
   /* border: 1.9px solid #134aa9; */
   color: #333333;
-  background: rgb(241 241 241);
+  background: rgb(249 249 249);
   text-decoration: none;
 }
 .tab-nav a:hover,
@@ -243,9 +243,9 @@
   gap: 12px;
 }
 .list-wrap hr {
-  background:#d2d2d2;
-  height:1px;
-  border:0;
+  background: #d2d2d2;
+  height: 1px;
+  border: 0;
 }
 .img-box {
   position: relative;
@@ -256,6 +256,7 @@
 }
 .img-box > a {
   position: relative;
+  border-bottom: 1px solid #ddd;
 }
 .list-wrap > .img-box > a {
   display: flex;
@@ -279,28 +280,16 @@
   position: relative;
   width: 100%;
   height: 100%;
-  padding-bottom: 7px;
+  padding-bottom: 10px;
   width: 13%;
 }
-
-
-.img-box > a:hover .img1  {
-
+/* .img-box > a:hover .img1  {
   filter: brightness(0.4);
 }
 
 .img-box > a:hover::after {
   display: block;
-}
-.img-box > a:hover .img1 {
-  filter: brightness(0.4);
-}
-.img-box > a > .img1 {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  padding-bottom: 10px;
-}
+} */
 
 .img-box > a > img {
   position: relative;
@@ -323,7 +312,7 @@
   font-size: 15px;
 }
 .list-wrap > .img-box > a > .span1 {
-  width: 100%;
+  width: 39%;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -331,9 +320,9 @@
   color: #555555;
   font-size: 18px;
   padding-bottom: 5px;
+  padding-left: 25px;
 }
 .list-wrap > .img-box > a > span:nth-child(3) {
-  width: 30%;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -341,15 +330,16 @@
   color: #202020;
   font-size: 17px;
   margin-left: 34px;
-  width: 52%;
+  width: 25%;
 }
-.list-wrap > .img-box > a > span:nth-child(n+4) {
-  width: 18%;
+.list-wrap > .img-box > a > span:nth-child(n + 4) {
+  width: 24%;
+  line-height: 23px;
 }
 /* 찜하기 */
 .img-box .hart-icon {
   position: absolute;
-  bottom: -4px;
+  bottom: 30px;
   right: 0;
   border: none;
   cursor: pointer;
@@ -358,10 +348,10 @@
   background: url("../images/kyungran/hart-icon_gray.svg") no-repeat center;
   z-index: 9;
 }
-.img-box .hart-icon:hover {
-  bottom: 0; /* 호버 시 아이콘이 살짝 위로 이동 */
+/* .img-box .hart-icon:hover {
+  bottom: 0; 
   transition: all 0.09s;
-}
+} */
 .img-box .hart-icon.act {
   background: url("../images/kyungran/full-hart-icon.svg") no-repeat center;
 }
