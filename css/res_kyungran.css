@@ -82,6 +82,12 @@
     right: 32px;
   }
 }
+@media all and (max-width: 769px) {
+  .section-tite {
+    padding-top: 51px;
+   }
+  }  
+  padding-top: ;
 @media all and (max-width: 710px) {
   .section2 .list-wrap .img-box:nth-child(3) {
     display: none;
