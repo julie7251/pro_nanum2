@@ -102,11 +102,14 @@ body {
   display: none;
 }
 .section6 {
-  display: block;
+  display: none;
   margin: 0 auto;
 }
 .section6 img {
   width: 100%;
+}
+.section7{
+  display: block;
 }
 /* ===================================================== */
 /* 푸터 */
@@ -172,13 +175,21 @@ footer .left button {
   border-radius: 7px;
 }
 /* =================================================== */
-/* 참여하기 */
+/* 신청하기 하단 */
+#bt-menu {
+  width: 100%;
+  position: fixed;
+  bottom: -50px;
+  transition: bottom 0.3s ease-in-out;
+  display: none;
+}
 .takejoin .heart {
   width: 100%;
+  height: 50px;
   background-color: #134aa9;
   color: #fff;
   border: none;
-  font-size: 2vw;
+  font-size: 5vw;
   display: none;
   font-family: "KBO-Dia-Gothic_light";
 }
@@ -371,10 +382,15 @@ footer .left button {
     font-size: 5vw;
     font-family: "KBO-Dia-Gothic_light";
   }
-
+  #bt-menu {
+    display: block;
+  }
+  .takejoin .heart {
+    display: block;
+  }
   footer {
+    height: 460px;
     width: 100%;
-    height: 450px;
   }
   footer .right h1 {
     font-family: "UhBeeSe_hyun";
@@ -387,11 +403,15 @@ footer .left button {
     text-align: left;
     color: #ffffff79;
   }
+
   footer .right p {
+    margin-top: 5%;
     line-height: 1.5;
     text-align: left;
-    font-family: "KBO-Dia-Gothic_light";
     letter-spacing: 1px;
+    font-family: "KBO-Dia-Gothic_light";
+    color: #bbbbbb;
+    font-size: 13px;
   }
   footer .left {
     margin: 0 auto;
@@ -399,24 +419,26 @@ footer .left button {
     width: 100%;
   }
   footer .left .tell {
-    font-size: 8vw;
+    margin-top: 5%;
+    font-size: 6vw;
+    color: #bbb;
     text-align: center;
-    margin-top: 4%;
     font-family: "KBO-Dia-Gothic_medium";
   }
   footer .left img {
-    width: 8%;
+    width: 6%;
+    filter: brightness(0.7);
   }
   footer .left button {
+    border-radius: 7px;
     width: 130px;
     height: 50px;
-    margin: 20px 5px;
+    margin: 30px 5px;
     background-color: #333;
-    border: 1px solid #fff;
-    color: #fff;
+    border: 1px solid #bbbbbb;
+    color: #bbb;
     font-family: "KBO-Dia-Gothic_light";
-    letter-spacing: 1px;
-    border-radius: 7px;
+    font-size: 13px;
   }
 }
 /* ==================================================== */
@@ -452,7 +474,7 @@ footer .left button {
 
   footer {
     width: 100%;
-    height: 400px;
+    height: 420px;
   }
   footer .right h1 {
     font-family: "UhBeeSe_hyun";
@@ -471,6 +493,7 @@ footer .left button {
     text-align: left;
     letter-spacing: 1px;
     font-family: "KBO-Dia-Gothic_light";
+    color: #bbbbbb;
     font-size: 13px;
   }
   footer .left {
@@ -479,22 +502,24 @@ footer .left button {
     width: 100%;
   }
   footer .left .tell {
-    font-size: 8vw;
+    font-size: 6vw;
+    color: #bbb;
     text-align: center;
     font-family: "KBO-Dia-Gothic_medium";
   }
   footer .left img {
-    width: 10%;
+    width: 6%;
+    filter: brightness(0.7);
   }
   footer .left button {
-    width: 130px;
+    border-radius: 7px;
+    width: 100px;
     height: 50px;
     margin: 20px 5px;
     background-color: #333;
-    border: 1px solid #fff;
-    color: #fff;
+    border: 1px solid #bbbbbb;
+    color: #bbb;
     font-family: "KBO-Dia-Gothic_light";
-    letter-spacing: 1px;
-    border-radius: 7px;
+    font-size: 13px;
   }
 }
