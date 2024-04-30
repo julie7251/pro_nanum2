@@ -40,7 +40,7 @@
 }
 @media (max-width: 1100px) {
   .img-box .hart-icon {
-      bottom: 2vw;
+    bottom: 2vw;
   }
 }
 @media all and (max-width: 900px) {
@@ -82,18 +82,38 @@
     right: 32px;
   }
 }
+@media all and (max-width: 780px) {
+  .list-wrap > .img-box > a > .span1 {
+    font-size: 17px;
+  }
+}
+@media all and (max-width: 770px) {
+  .list-wrap > .img-box > a > .span1 {
+    width: 36%;
+  }
+  .list-wrap > .img-box > a > span:nth-child(3) {
+    width: 22%;
+  }
+  .list-wrap > .img-box > a > span:nth-child(4) {
+    width: 18%;
+  }
+}
 @media all and (max-width: 769px) {
   .section-tite {
     padding-top: 51px;
-   }
-  }  
-  padding-top: ;
-@media all and (max-width: 710px) {
-  .section2 .list-wrap .img-box:nth-child(3) {
-    display: none;
+  }
+}
+@media screen and (max-width: 760px) {
+  .img-box > a > .img1 {
+    width: 13%;
   }
   .img-box .hart-icon {
-    bottom: -7px;
+    bottom: 3vw;
+  }
+  .list-wrap > .img-box > a > span:nth-child(3),
+  .list-wrap > .img-box > a > span:nth-child(n + 4),
+  .list-wrap > .img-box > a > span:nth-child(5n) {
+    margin-bottom: 11px;
   }
 }
 @media all and (max-width: 660px) {
@@ -101,11 +121,41 @@
   .tab-nav-wrapper {
     width: 521px !important;
   }
+  .list-wrap > .img-box > a > span:nth-child(3) {
+    margin-left: 25px;
+  }
+  .list-wrap > .img-box > a > span:nth-child(4) {
+    margin-left: 5px;
+  }
+  .list-wrap > .img-box > a > span:nth-child(5) {
+    width: 26%;
+  }
 }
 @media all and (max-width: 600px) {
   /* 탭메뉴 가로설정 */
   .tab-nav-wrapper {
     width: 400px !important;
+  }
+  .list-wrap > .img-box > a > .span1 {
+    margin-left: 21px;
+  }
+}
+@media all and (max-width: 602px) {
+  .list-wrap > .img-box > a > span:nth-child(3) {
+    margin-left: 18px;
+  }
+}
+@media all and (max-width: 580px) {
+  .list-wrap > .img-box > a > span:nth-child(3) {
+    margin-left: 5px;
+  }
+  .list-wrap > .img-box > a > span:nth-child(5) {
+    margin-left: 5px;
+  }
+}
+@media screen and (max-width: 570px) {
+  .img-box > a > .img1 {
+    width: 15%;
   }
 }
 @media screen and (max-width: 560px) {
@@ -118,14 +168,42 @@
   .FAQ-box .FAQ span {
     font-size: 28px;
   }
-  .img-box .hart-icon:hover {
-    bottom: -6px; /* 호버 시 아이콘이 살짝 위로 이동 */
-  }
+
   .img-box > a:hover .img1 {
     filter: none;
   }
   .img-box > a:hover::after {
     display: none;
+  }
+  .list-wrap > .img-box > a > span:nth-child(3) {
+    margin-left: 14px;
+  }
+  .list-wrap > .img-box > a > .span1 {
+    width: 25%;
+  }
+}
+@media (max-width: 510px) {
+  .list-wrap > .img-box > a > span:nth-child(4) {
+    width: 25%;
+  }
+  .list-wrap > .img-box > a > span:nth-child(5) {
+    display: none;
+  }
+  .img-box > a > .img1 {
+    width: 17%;
+  }
+  .list-wrap > .img-box > a > .span1 {
+    margin-left: 18px;
+  }
+  .list-wrap > .img-box > a > span:nth-child(3),
+  .list-wrap > .img-box > a > span:nth-child(n + 4),
+  .list-wrap > .img-box > a > span:nth-child(5n) {
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 460px) {
+  .img-box > a > .img1 {
+    width: 19%;
   }
 }
 @media all and (max-width: 450px) {
@@ -133,7 +211,7 @@
     padding: 0px 20px;
     margin-top: 26px;
     margin-bottom: 45px;
-}
+  }
   /* 탭메뉴 가로설정 */
   .tab-nav-wrapper {
     width: 310px !important;
@@ -157,19 +235,19 @@
     font-size: 14px;
     color: #292929;
   }
- 
+
   .section3 {
     padding: 0px 20px;
   }
   .section3-inner {
     gap: 20px;
-padding: 26px 0;
+    padding: 26px 0;
   }
   .section3 .CM-box,
   .section3 .FAQ-box {
     padding: 23px;
   }
-  .CM-box .CM span ,
+  .CM-box .CM span,
   .FAQ-box .FAQ span {
     font-size: 24px;
   }
@@ -190,6 +268,19 @@ padding: 26px 0;
     line-height: 25px;
   }
 }
+@media (max-width: 420px) {
+  .list-wrap > .img-box > a > .span1 {
+    margin-left: 16px;
+  }
+  .list-wrap > .img-box > a > span:nth-child(4) {
+    width: 27%;
+  }
+}
+@media (max-width: 391px) {
+  .list-wrap > .img-box > a > span:nth-child(4) {
+    width: 31%;
+  }
+}
 @media all and (max-width: 390px) {
   /* 탭메뉴 가로설정 */
   .tab-nav-wrapper {
@@ -204,6 +295,14 @@ padding: 26px 0;
   .FAQ-box .FAQ span {
     font-size: 24px;
   }
+  .img-box > a > .img1 {
+    width: 21%;
+  }
+}
+@media (max-width: 373px) {
+  .list-wrap > .img-box > a > span:nth-child(4) {
+    width: 38%;
+  }
 }
 @media all and (max-width: 360px) {
   /* 탭메뉴 가로설정 */
@@ -216,10 +315,28 @@ padding: 26px 0;
     background-size: contain !important;
   }
 }
+@media (max-width: 345px) {
+  .list-wrap > .img-box > a > span:nth-child(4) {
+    width: 41%;
+  }
+}
 @media all and (max-width: 340px) {
   /* 탭메뉴 가로설정 */
   .tab-nav-wrapper {
     width: 220px !important;
+  }
+}
+@media (max-width: 340px) {
+  .list-wrap > .img-box > a > .span1 {
+    margin-left: 13px;
+  }
+  .list-wrap > .img-box > a > span:nth-child(4) {
+    width: 46%;
+  }
+}
+@media (max-width: 329px) {
+  .list-wrap > .img-box > a > span:nth-child(3) {
+    margin-left: 11px;
   }
 }
 @media all and (max-width: 280px) {
