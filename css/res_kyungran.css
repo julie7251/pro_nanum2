@@ -9,6 +9,11 @@
     width: 692px;
   }
 }
+@media all and (min-width: 769px) {
+  .section-tite {
+    padding-top: 40px;
+  }
+}
 @media all and (max-width: 1800px) {
   .section2 {
     padding: 0px 25px;
@@ -22,20 +27,17 @@
 }
 @media all and (max-width: 1170px) {
   .section2 {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 116px;
+    margin-bottom: 87px;
   }
   .right-toggle {
     padding: 18px 0 11px;
   }
-  .area-list {
-    top: 44px;
+  .area-list , .monthly-list , .order-list {
+    top: 48px;
   }
-  .monthly-list {
-    top: 44px;
-  }
-  .order-list {
-    top: 44px;
+  .section3-inner {
+    padding: 50px 0 60px;
   }
 }
 @media (max-width: 1100px) {
@@ -98,11 +100,6 @@
     width: 18%;
   }
 }
-@media all and (max-width: 769px) {
-  .section-tite {
-    padding-top: 51px;
-  }
-}
 @media screen and (max-width: 760px) {
   .img-box > a > .img1 {
     width: 13%;
@@ -159,6 +156,10 @@
   }
 }
 @media screen and (max-width: 560px) {
+  .section2 {
+    margin-top: 87px;
+    margin-bottom: 64px;
+  }
   .section-tite {
     font-size: 28px;
   }
@@ -209,8 +210,8 @@
 @media all and (max-width: 450px) {
   .section2 {
     padding: 0px 20px;
-    margin-top: 26px;
-    margin-bottom: 45px;
+    margin-top: 87px;
+    margin-bottom: 54px;
   }
   /* 탭메뉴 가로설정 */
   .tab-nav-wrapper {
@@ -226,12 +227,13 @@
     padding: 20px 0 11px;
   }
   .list-wrap > .img-box > a > .span1 {
-    font-size: 15px;
+    font-size: 14px;
   }
   .list-wrap > .img-box > a > span {
     font-size: 13px;
   }
   .pgn > button {
+    margin-top: 33px;
     font-size: 14px;
     color: #292929;
   }
@@ -241,7 +243,7 @@
   }
   .section3-inner {
     gap: 20px;
-    padding: 26px 0;
+    padding: 26px 0 47px 0;
   }
   .section3 .CM-box,
   .section3 .FAQ-box {
@@ -253,7 +255,7 @@
   }
   .CM-box .CM a li,
   .FAQ-box .FAQ a li {
-    font-size: 14px;
+    font-size: 16px;
     padding-left: 12px;
   }
   .CM-box .CM .plus-icon,
