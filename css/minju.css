@@ -215,6 +215,12 @@ footer .left button {
 }
 /* ===================================================== */
 @media screen and (max-width: 859px) {
+  .section6{
+    display: block;
+  }
+  .section7{
+    display: none;
+  }
   .section4 .snstext {
     display: none;
   }
