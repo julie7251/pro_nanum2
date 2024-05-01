@@ -31,16 +31,16 @@ window.addEventListener("load", function () {
       delay: 2000, // 슬라이드 간격을 여기에 밀리초 단위로 설정합니다.
     },
     loop: true,
-    slidesPerView: 2,
+    slidesPerView: 1,
     spaceBetween: 0,
     // centeredSlides: true,
     
     breakpoints: {
-      769: {
+      1299: {
         slidesPerView: 1,
       },
       768: {
-        slidesPerView: 2,
+        slidesPerView: 1,
       },
       0: {
         slidesPerView: 1,

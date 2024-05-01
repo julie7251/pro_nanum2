@@ -211,16 +211,18 @@ footer .left button {
   }
   footer .left button {
     font-size: 16px;
+  } 
+  .section6{
+    display: block;
+  } 
+   .section7{
+    display: none;
   }
 }
 /* ===================================================== */
 @media screen and (max-width: 859px) {
-  .section6{
-    display: block;
-  }
-  .section7{
-    display: none;
-  }
+ 
+
   .section4 .snstext {
     display: none;
   }
