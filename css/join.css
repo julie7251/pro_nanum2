@@ -1,5 +1,25 @@
 @charset "utf-8";
 /* 회원가입 */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+body {
+  font-family: "KBO-Dia-Gothic_light", sans-serif;
+  font-size: 16px;
+  /* padding: 25px; */
+  background-color: #ffff;
+  color: #333;
+  text-align: center;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
 header {
   height: 80px;
 }
@@ -46,6 +66,18 @@ header {
   border: none;
   background-color: #134aa9;
   border-radius: 50px;
+  color: #fff;
+}
+.box1 i{
+  color: #333;
+}
+.box1 h2{
+  color: #333;
+}
+.box1 h6{
+  color: #333;
+}
+.box2 i, h2, h6 {
   color: #fff;
 }
 
@@ -121,6 +153,12 @@ i {
     border-radius: 50px;
     color: #fff;
   }
+  .box1 i {
+    color: #333;
+  }
+  .box2 a {
+    color: #fff;
+  }
   .join h2 {
     font-size: 6vi;
     font-weight: 800;
@@ -137,7 +175,7 @@ i {
     font-size: 10vw;
     margin: 0 auto;
   }
-  footer{
+  footer {
     width: 100%;
     height: 470px;
   }
