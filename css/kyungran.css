@@ -107,16 +107,43 @@
   z-index: 99;
   border-radius: 10px;
 }
-.area-list.active {
+/* 스크롤 커스텀 */
+.area-list::-webkit-scrollbar , .monthly-list::-webkit-scrollbar , .order-list::-webkit-scrollbar{
+width: 10px;
+}
+.area-list::-webkit-scrollbar-track , .monthly-list::-webkit-scrollbar-track , .order-list::-webkit-scrollbar-track { 
+  background-color: rgb(221 221 221);
+}
+.area-list::-webkit-scrollbar-thumb , .monthly-list::-webkit-scrollbar-thumb , .order-list::-webkit-scrollbar-thumb{ 
+  background-color: rgb(192 192 192);
+}
+.area-list::-webkit-scrollbar-button , .monthly-list::-webkit-scrollbar-button , .order-list::-webkit-scrollbar-button {
+  display: none;
+}
+/* 코너에 라운드 효과 */
+.area-list::-webkit-scrollbar-track ,
+.area-list::-webkit-scrollbar-thumb ,
+.monthly-list::-webkit-scrollbar-track ,
+.monthly-list::-webkit-scrollbar-thumb ,
+.order-list::-webkit-scrollbar-track ,
+.order-list::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+}
+/* hover 효과 */
+.area-list::-webkit-scrollbar-thumb:hover , .monthly-list::-webkit-scrollbar-thumb:hover , .order-list::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(175, 174, 174);
+  transition: all 0.2s; /* 작동 안 됨 */
+}
+.area-list.active , .monthly-list.active , .order-list.active {
   display: block;
 }
-.area-list:hover {
+.area-list:hover , .monthly-list:hover , .order-list:hover {
   cursor: pointer;
 }
-.area-list li:hover {
-  color: #134aa9;
+.area-list li:hover , .monthly-list li:hover , .order-list li:hover {
+  color: #0c429e;
   cursor: pointer;
-  background-color: #f1f3f7;
+  background-color: #fcfcfc;
 }
 .area-list > li {
   position: relative;
@@ -164,17 +191,7 @@
   z-index: 99;
   border-radius: 10px;
 }
-.monthly-list.active {
-  display: block;
-}
-.monthly-list:hover {
-  cursor: pointer;
-}
-.monthly-list li:hover {
-  color: #134aa9;
-  cursor: pointer;
-  background-color: #f1f3f7;
-}
+
 .monthly-list > li {
   position: relative;
   display: block;
@@ -216,17 +233,7 @@
   z-index: 99;
   border-radius: 10px;
 }
-.order-list.active {
-  display: block;
-}
-.order-list:hover {
-  cursor: pointer;
-}
-.order-list li:hover {
-  color: #134aa9;
-  cursor: pointer;
-  background-color: #f1f3f7;
-}
+
 .order-list > li {
   position: relative;
   display: block;
@@ -275,40 +282,21 @@
   align-items: center;
   justify-content: space-evenly;
 }
-.img-box a::after {
-  content: "";
-  display: none;
-  position: absolute;
-  background: url("../images/kyungran/잔여\ 10명\ 모집\ 15명.png") no-repeat;
-  bottom: 0;
-  top: 0px;
-  left: 50%;
-  width: 198px;
-  transform: translateX(-50%);
-  transition: all 0.1s;
-}
-
 .img-box > a > .img1 {
   position: relative;
   height: 100%;
   /* padding-bottom: 10px; */
   width: 10%;
 }
-/* .img-box > a:hover .img1  {
-  filter: brightness(0.4);
+.img-box a span {
+color: #134aa9;
 }
-
-.img-box > a:hover::after {
-  display: block;
-} */
-
 .img-box > a > img {
   position: relative;
   width: 100%;
   height: 100%;
   padding-bottom: 7px;
 }
-
 /* 내용 */
 .list-wrap > .img-box > a > span {
   position: relative;
@@ -355,6 +343,12 @@
   margin-bottom: 5px;
 }
 
+.list-wrap .img-box a:hover span , .list-wrap .img-box a:hover{
+  color: #01173b;
+  background-color: #fcfcfc;
+  /* transform: translateY(-1px); */
+  /* transition: all 0.1s; */
+}
 /* 찜하기 */
 .img-box .hart-icon {
   position: absolute;
@@ -425,21 +419,30 @@
   border-bottom: 1px solid #dddddd;
   padding-bottom: 7px;
 }
-.CM-box .CM .plus-icon,
-.FAQ-box .FAQ .plus-icon {
+.CM-box .CM .fa-plus ,
+.FAQ-box .FAQ .fa-plus {
   position: absolute;
   top: 36px;
   right: 36px;
-  width: 54px;
-  height: 54px;
   border: none;
   outline: none;
-  background: url("../images/kyungran/pluse-icon-set.png") no-repeat 0px 0px;
+  color: #333;
+  transition: all 0.3s linear;
 }
-.CM-box .CM .plus-icon:hover,
-.FAQ-box .FAQ .plus-icon:hover {
-  background: url("../images/kyungran/pluse-icon-set.png") no-repeat bottom;
+.CM-box:hover .fa-plus ,
+.FAQ-box:hover .fa-plus {
+  transform: rotate( 360deg );
+  color: #0144b8;
 }
+.CM-box:hover ,
+.FAQ-box:hover {
+  color: #0144b8;
+}
+.section3 .CM-box:hover , .section3 .FAQ-box:hover {
+  box-shadow: rgba(0, 0, 0, 0.212) 0px 3px 10px 0px;
+   transform: translateY(-9px);
+  transition: all 0.27s linear;
+  }
 .CM-box .CM a li,
 .FAQ-box .FAQ a li {
   font-size: 19px;
@@ -458,7 +461,7 @@
 }
 .CM-box .CM a:hover li,
 .FAQ-box .FAQ a:hover li {
-  color: #134aa9;
+  color: #4d4d4d;
 }
 .CM-box .CM a li {
   line-height: 31px;
