@@ -102,14 +102,11 @@ body {
   display: none;
 }
 .section6 {
-  display: none;
+  display: block;
   margin: 0 auto;
 }
 .section6 img {
   width: 100%;
-}
-.section7{
-  display: block;
 }
 /* ===================================================== */
 /* 푸터 */
@@ -175,21 +172,13 @@ footer .left button {
   border-radius: 7px;
 }
 /* =================================================== */
-/* 신청하기 하단 */
-#bt-menu {
-  width: 100%;
-  position: fixed;
-  bottom: -50px;
-  transition: bottom 0.3s ease-in-out;
-  display: none;
-}
+/* 참여하기 */
 .takejoin .heart {
   width: 100%;
-  height: 50px;
   background-color: #134aa9;
   color: #fff;
   border: none;
-  font-size: 5vw;
+  font-size: 2vw;
   display: none;
   font-family: "KBO-Dia-Gothic_light";
 }
@@ -211,18 +200,18 @@ footer .left button {
   }
   footer .left button {
     font-size: 16px;
+
   } 
   .section6{
     display: block;
   } 
    .section7{
     display: none;
+
   }
 }
 /* ===================================================== */
 @media screen and (max-width: 859px) {
- 
-
   .section4 .snstext {
     display: none;
   }
@@ -390,15 +379,10 @@ footer .left button {
     font-size: 5vw;
     font-family: "KBO-Dia-Gothic_light";
   }
-  #bt-menu {
-    display: block;
-  }
-  .takejoin .heart {
-    display: block;
-  }
+
   footer {
-    height: 460px;
     width: 100%;
+    height: 450px;
   }
   footer .right h1 {
     font-family: "UhBeeSe_hyun";
@@ -411,15 +395,11 @@ footer .left button {
     text-align: left;
     color: #ffffff79;
   }
-
   footer .right p {
-    margin-top: 5%;
     line-height: 1.5;
     text-align: left;
-    letter-spacing: 1px;
     font-family: "KBO-Dia-Gothic_light";
-    color: #bbbbbb;
-    font-size: 13px;
+    letter-spacing: 1px;
   }
   footer .left {
     margin: 0 auto;
@@ -427,26 +407,24 @@ footer .left button {
     width: 100%;
   }
   footer .left .tell {
-    margin-top: 5%;
-    font-size: 6vw;
-    color: #bbb;
+    font-size: 8vw;
     text-align: center;
+    margin-top: 4%;
     font-family: "KBO-Dia-Gothic_medium";
   }
   footer .left img {
-    width: 6%;
-    filter: brightness(0.7);
+    width: 8%;
   }
   footer .left button {
-    border-radius: 7px;
     width: 130px;
     height: 50px;
-    margin: 30px 5px;
+    margin: 20px 5px;
     background-color: #333;
-    border: 1px solid #bbbbbb;
-    color: #bbb;
+    border: 1px solid #fff;
+    color: #fff;
     font-family: "KBO-Dia-Gothic_light";
-    font-size: 13px;
+    letter-spacing: 1px;
+    border-radius: 7px;
   }
 }
 /* ==================================================== */
@@ -482,7 +460,7 @@ footer .left button {
 
   footer {
     width: 100%;
-    height: 420px;
+    height: 400px;
   }
   footer .right h1 {
     font-family: "UhBeeSe_hyun";
@@ -501,7 +479,6 @@ footer .left button {
     text-align: left;
     letter-spacing: 1px;
     font-family: "KBO-Dia-Gothic_light";
-    color: #bbbbbb;
     font-size: 13px;
   }
   footer .left {
@@ -510,24 +487,22 @@ footer .left button {
     width: 100%;
   }
   footer .left .tell {
-    font-size: 6vw;
-    color: #bbb;
+    font-size: 8vw;
     text-align: center;
     font-family: "KBO-Dia-Gothic_medium";
   }
   footer .left img {
-    width: 6%;
-    filter: brightness(0.7);
+    width: 10%;
   }
   footer .left button {
-    border-radius: 7px;
-    width: 100px;
+    width: 130px;
     height: 50px;
     margin: 20px 5px;
     background-color: #333;
-    border: 1px solid #bbbbbb;
-    color: #bbb;
+    border: 1px solid #fff;
+    color: #fff;
     font-family: "KBO-Dia-Gothic_light";
-    font-size: 13px;
+    letter-spacing: 1px;
+    border-radius: 7px;
   }
 }

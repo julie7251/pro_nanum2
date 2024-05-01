@@ -34,11 +34,12 @@ window.addEventListener("load", function () {
     slidesPerView: 1,
     spaceBetween: 0,
     // centeredSlides: true,
-    
     breakpoints: {
+
       1299: {
         slidesPerView: 1,
       },
+
       768: {
         slidesPerView: 1,
       },
@@ -74,20 +75,4 @@ window.addEventListener("load", function () {
       topBtnImg.classList.remove("up");
     }
   });
-
-  var swiper = new Swiper(".nanumPcbanner", {
-    autoplay: {
-      delay: 2000, // 슬라이드 간격을 여기에 밀리초 단위로 설정합니다.
-    },
-    loop: true,
-    // slidesPerView: 4,
-    // spaceBetween: 0,
-    breakpoints: {
-      1300: {
-        slidesPerView:1,
-      },
-    },
-    // centeredSlides: true,
-  });
-
 });
