@@ -54,9 +54,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // 각 메뉴 아이템을 가져옵니다.
   var serviceMenuItem = document.querySelector(".top-menu li:nth-child(1) a");
-  var programMenuItem = document.querySelector(".top-menu li:nth-child(2) a");
-  var boardMenuItem = document.querySelector(".top-menu li:nth-child(3) a");
-  var reviewMenuItem = document.querySelector(".top-menu li:nth-child(4) a");
+  var programMenuItem = document.querySelector(".top-menu li:nth-child(3) a");
+  var boardMenuItem = document.querySelector(".top-menu li:nth-child(4) a");
+  var reviewMenuItem = document.querySelector(".top-menu li:nth-child(2) a");
 
   // 서비스 소개 메뉴 클릭 시 스크롤 이벤트를 추가합니다.
   serviceMenuItem.addEventListener("click", function (e) {
