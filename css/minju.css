@@ -200,6 +200,14 @@ footer .left button {
   }
   footer .left button {
     font-size: 16px;
+
+  } 
+  .section6{
+    display: block;
+  } 
+   .section7{
+    display: none;
+
   }
 }
 /* ===================================================== */
