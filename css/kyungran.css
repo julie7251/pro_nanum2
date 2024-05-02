@@ -104,7 +104,7 @@
   max-height: 202px;
   min-width: 97px;
   overflow-y: scroll;
-  z-index: 99;
+  z-index: 9;
   border-radius: 10px;
 }
 /* 스크롤 커스텀 */
@@ -188,7 +188,7 @@ width: 10px;
   max-height: 202px;
   min-width: 86px;
   overflow-y: scroll;
-  z-index: 99;
+  z-index: 9;
   border-radius: 10px;
 }
 
@@ -230,7 +230,7 @@ width: 10px;
   padding-bottom: 7px;
   max-height: 202px;
   min-width: 81px;
-  z-index: 99;
+  z-index: 9;
   border-radius: 10px;
 }
 
@@ -309,7 +309,7 @@ color: #134aa9;
   -webkit-box-orient: vertical;
   white-space: normal;
   letter-spacing: -0.6px;
-  color: #1a1a1aa3;
+  color: #6d6d6d;
   font-size: 15px;
 }
 .list-wrap > .img-box > a > .span1 {
@@ -321,7 +321,7 @@ color: #134aa9;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   white-space: normal;
-  color: #555555;
+  color: #333333;
   font-size: 18px;
   margin-bottom: 5px;
   margin-left: 25px;
@@ -335,7 +335,7 @@ color: #134aa9;
 }
 .list-wrap > .img-box > a > span:nth-child(5) {
   width: 24%;
-  color: #485c80;
+  color: #373f57;
 }
 .list-wrap > .img-box > a > span:nth-child(3),
 .list-wrap > .img-box > a > span:nth-child(n + 4),
@@ -344,7 +344,7 @@ color: #134aa9;
 }
 
 .list-wrap .img-box a:hover span , .list-wrap .img-box a:hover{
-  color: #01173b;
+  color: #a5a5a5;
   background-color: #fcfcfc;
   /* transform: translateY(-1px); */
   /* transition: all 0.1s; */
@@ -359,7 +359,6 @@ color: #134aa9;
   width: 39px;
   height: 35px;
   background: url("../images/kyungran/hart-icon_gray.svg") no-repeat center;
-  z-index: 9;
 }
 /* .img-box .hart-icon:hover {
   bottom: 0; 
