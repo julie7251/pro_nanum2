@@ -372,7 +372,8 @@ color: #134aa9;
   display: block;
   margin: auto;
 }
-.pgn > button {
+.pgn > a {
+  display: inline-block;
   position: relative;
   cursor: pointer;
   font-family: inherit;
@@ -383,6 +384,7 @@ color: #134aa9;
   border: 1px solid #cfcfcf;
   border-radius: 7px;
   background-color: #fff;
+  color: #333;
 }
 /* 섹션3 */
 .section3 {
