@@ -102,4 +102,9 @@ document.addEventListener("DOMContentLoaded", function () {
       header.style.boxShadow = "-1px 2px 10px 4px rgba(0, 0, 0, 0.05)";
     }
   });
+
+  // 버튼 클릭 시 list.html로 이동하는 이벤트 리스너를 추가합니다.
+  document.getElementById("apply-button").addEventListener("click", function() {
+    window.location.href = "list.html";
+});
 });
