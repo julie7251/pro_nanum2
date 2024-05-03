@@ -55,7 +55,6 @@ a {
 .logingform h1 {
   font-size: 3vw;
   margin-bottom: 3%;
-
   margin-top: 10%;
 }
 .login {
@@ -125,6 +124,7 @@ form .joinbutton a {
   .logingform h1 {
     font-size: 5vw;
     margin-bottom: 6%;
+    margin-top: 15%;
   }
   form .loginbutton {
     width: 40%;
@@ -135,7 +135,6 @@ form .joinbutton a {
   .icon {
     padding: 20px;
   }
-
   .icon img {
     width: 50px;
     margin: 20px;
@@ -159,6 +158,9 @@ form .joinbutton a {
   }
   form > input {
     width: 60%;
+  }
+  .check {
+    line-height: 1;
   }
 }
 
@@ -190,9 +192,5 @@ form .joinbutton a {
   }
   .error {
     font-size: 10px;
-  }
-  .check {
-    padding: 15px;
-    font-size: 17px;
   }
 }

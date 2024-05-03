@@ -21,14 +21,6 @@ body {
 .pop-button .chat-btn img {
   width: 100%;
 }
-.pop-button span {
-  font-family: "KBO-Dia-Gothic_light";
-  position: absolute;
-  top: 38px;
-  left: 13px;
-  color: #fff;
-  z-index: 9999999;
-}
 .pop-button .chat-btn {
   animation: updown 1.5s infinite;
   -webkit-animation: updown 1.5s infinite;
@@ -215,6 +207,9 @@ footer .left button {
   .section6{
     display: block;
   } 
+  .section6 img{
+    width: 100%;
+  }
    .section7{
     display: none;
   }
