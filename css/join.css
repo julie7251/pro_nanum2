@@ -91,7 +91,7 @@ i {
 /* ========================================== */
 @media screen and (max-width: 768px) {
   .joinform h1 {
-    font-weight: bold;
+      font-size: 8vw;
   }
   .box1 {
     padding: 4%;
@@ -127,7 +127,7 @@ i {
 @media screen and (max-width: 320px) {
   .joinform h1 {
     font-size: 10vw;
-    font-weight: bold;
+
   }
   .join {
     position: relative;
