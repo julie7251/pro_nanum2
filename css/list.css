@@ -34,7 +34,6 @@ a {
 font-weight: bold;
 }
 
-
 /* 섹션2 */
 .section2 {
   max-width: 1400px;
@@ -45,7 +44,7 @@ font-weight: bold;
 .section-tite {
   display: block;
   font-size: 32px;
-  padding: 60px;
+  padding: 5%;
   font-weight: bold;
 }
 /* 카테고리 */
@@ -53,6 +52,7 @@ font-weight: bold;
   overflow: hidden;
   width: 674px;
   margin: 0 auto;
+  padding-bottom: 5%;
 }
 .tab-nav {
   display: flex;
@@ -393,3 +393,237 @@ width: 10px;
   border-radius: 7px;
   background-color: #fff;
 }
+/* 반응형 */
+@media all and (max-width: 1800px) {
+  .section2 {
+    padding: 0px 25px;
+  }
+  .section3 {
+    padding: 0px 25px;
+  }
+  .section3-wrap {
+    gap: 25px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .tab-nav a {
+    font-size: 17px;
+  }
+  .tab-nav-wrapper {
+    overflow: hidden;
+    width: 692px;
+  }
+}
+@media all and (max-width: 1170px) {
+  .section2 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .right-toggle {
+    padding: 18px 0 11px;
+  }
+  .area-list,
+  .monthly-list,
+  .order-list {
+    top: 48px;
+  }
+}
+@media all and (min-width: 769px) {
+  .section-tite {
+    padding-top: 51px;
+   }
+  }   
+
+@media all and (max-width: 900px) {
+  .section2 .list-wrap .img-box:nth-child(4) {
+    display: none;
+  }
+  .section3-inner {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  /* 탭메뉴 가로설정 */
+  .tab-nav-wrapper {
+    width: 585px !important;
+  }
+  .tab-nav a:hover {
+    background-color: #ffffff;
+    color: #292929;
+  }
+  .tab-nav a.active {
+    background-color: #134aa9;
+    color: #fff;
+    transition: all 0.3s;
+  }
+  .FAQ-box .FAQ a li {
+    line-height: 28px;
+  }
+  .CM-box .CM a li {
+    line-height: 23px;
+  }
+  .section3 .CM-box,
+  .section3 .FAQ-box {
+    padding: 35px;
+  }
+  .CM-box .CM .plus-icon,
+  .FAQ-box .FAQ .plus-icon {
+    top: 32px;
+    right: 32px;
+  }
+}
+@media all and (max-width: 710px) {
+  .section2 .list-wrap .img-box:nth-child(3) {
+    display: none;
+  }
+  .img-box .hart-icon {
+    bottom: -7px;
+  }
+}
+@media all and (max-width: 660px) {
+  /* 탭메뉴 가로설정 */
+  .tab-nav-wrapper {
+    width: 525px !important;
+  }
+}
+@media all and (max-width: 600px) {
+  /* 탭메뉴 가로설정 */
+  .tab-nav-wrapper {
+    width: 339px !important;
+  }
+}
+@media screen and (max-width: 560px) {
+  .section-tite {
+    font-size: 28px;
+  }
+  .CM-box .CM span {
+    font-size: 28px;
+  }
+  .FAQ-box .FAQ span {
+    font-size: 28px;
+  }
+  .img-box .hart-icon:hover {
+    bottom: -6px; /* 호버 시 아이콘이 살짝 위로 이동 */
+  }
+  .img-box > a:hover .img1 {
+    filter: none;
+  }
+  .img-box > a:hover::after {
+    display: none;
+  }
+}
+@media all and (max-width: 450px) {
+  .section2 {
+    padding: 0px 20px;
+    margin-top: 26px;
+    margin-bottom: 45px;
+}
+  /* 탭메뉴 가로설정 */
+  .tab-nav-wrapper {
+    width: 320px !important;
+  }
+  .tab-nav a {
+    font-size: 15px;
+  }
+  .section-tite {
+    font-size: 25px;
+  }
+  .right-toggle {
+    padding: 20px 0 11px;
+  }
+  .area-list > li , .monthly-list > li ,  .order-list > li { 
+    font-size: 14px;
+  }
+  .list-wrap {
+  padding-bottom: 34px;
+  }
+  .list-wrap > .img-box > a > .span1 {
+    font-size: 16px;
+  }
+  .list-wrap > .img-box > a > span {
+    font-size: 14px;
+  }
+  .pgn > button {
+    font-size: 14px;
+    color: #292929;
+  }
+  .section3 {
+    padding: 0px 20px;
+  }
+  .section3-inner {
+    gap: 20px;
+padding: 26px 0;
+  }
+  .section3 .CM-box,
+  .section3 .FAQ-box {
+    padding: 23px;
+  }
+  .CM-box .CM span ,
+  .FAQ-box .FAQ span {
+    font-size: 25px;
+  }
+  .CM-box .CM a li,
+  .FAQ-box .FAQ a li {
+    font-size: 16px;
+    padding-left: 12px;
+  }
+  .CM-box .CM .plus-icon,
+  .FAQ-box .FAQ .plus-icon {
+    top: 23px;
+    right: 23px;
+  }
+  .CM-box .CM a li {
+    line-height: 18px;
+  }
+  .FAQ-box .FAQ a li {
+    line-height: 23px;
+  }
+  .list-wrap > .img-box > a > span {
+    padding: 6px 0 0px;
+    }
+    .section3 .CM-box, .section3 .FAQ-box {
+      padding: 23px 23px 34px 23px
+      }
+      
+}
+@media all and (max-width: 390px) {
+  /* 탭메뉴 가로설정 */
+  .tab-nav-wrapper {
+    width: 295px !important;
+  }
+  .section-tite {
+    font-size: 24px;
+  }
+  .CM-box .CM span {
+    font-size: 24px;
+  }
+  .FAQ-box .FAQ span {
+    font-size: 24px;
+  }
+}
+@media all and (max-width: 360px) {
+  /* 탭메뉴 가로설정 */
+  .tab-nav-wrapper {
+    width: 292px !important;
+  }
+
+  .img-box a::after {
+    width: 90% !important;
+    background-size: contain !important;
+  }
+}
+@media all and (max-width: 340px) {
+  /* 탭메뉴 가로설정 */
+  .tab-nav-wrapper {
+    width: 226px !important;
+  }
+}
+@media all and (max-width: 280px) {
+  /* 탭메뉴 가로설정 */
+  .tab-nav-wrapper {
+    width: 195px !important;
+  }
+}
+
