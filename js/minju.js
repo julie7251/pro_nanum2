@@ -25,6 +25,8 @@ window.addEventListener("load", function () {
       menu.style.bottom = "-50px"; // 메뉴를 숨깁니다.
     }
   });
+
+
   //배너
   var swiper = new Swiper(".nanumbanner", {
     autoplay: {
@@ -34,20 +36,24 @@ window.addEventListener("load", function () {
     slidesPerView: 1,
     spaceBetween: 0,
     // centeredSlides: true,
-    breakpoints: {
-
-      1299: {
-        slidesPerView: 1,
-      },
-
-      768: {
-        slidesPerView: 1,
-      },
-      0: {
-        slidesPerView: 1,
-      },
-    },
   });
+
+
+
+  //pc배너
+  var swiper = new Swiper(".nanumPcbanner", {
+    autoplay: {
+      delay: 2000, // 슬라이드 간격을 여기에 밀리초 단위로 설정합니다.
+    },
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 0,
+    // centeredSlides: true,
+  });
+
+
+
+
   // top 버튼 스크롤 기능
   const topBtn = document.getElementById("top-btn");
   topBtn.addEventListener("click", function (event) {
@@ -65,6 +71,9 @@ window.addEventListener("load", function () {
     }
   });
 
+
+
+
   // 화살표 이미지 회전
   const topBtnImg = document.getElementById("top-btn-img");
   window.addEventListener("scroll", function () {
@@ -75,4 +84,7 @@ window.addEventListener("load", function () {
       topBtnImg.classList.remove("up");
     }
   });
+
+
+
 });
