@@ -602,6 +602,20 @@ padding: 26px 0;
   .FAQ-box .FAQ span {
     font-size: 24px;
   }
+  
+/* 섹션2 */
+.section2 {
+  margin-top: 100px;
+  /* margin-bottom: 150px; */
+}
+.section-tite {
+  font-size: 22px;
+  /* padding: 5%; */
+}
+/* 카테고리 */
+.tab-nav-wrapper {
+  /* padding-bottom: 5%; */
+}
 }
 @media all and (max-width: 360px) {
   /* 탭메뉴 가로설정 */
