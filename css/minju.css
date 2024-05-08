@@ -454,15 +454,15 @@ footer .left button {
     height: 100px;
   }
   .section4 h1 {
-    font-size: 8vw;
+    font-size: 7vw;
     font-weight: 800;
   }
   .section4 .snstext a img {
-    padding-top: 2%;
-    width: 18%;
+    padding-top: -2%;
+    width: 15%;
   }
   .nanum-sns {
-    margin-top: -20%;
+    margin-top: -35%;
     display: block;
   }
   .snsnanum {
