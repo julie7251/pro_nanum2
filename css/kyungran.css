@@ -53,7 +53,7 @@
   position: relative;
   display: flex;
   justify-content: flex-end;
-  padding: 4px 0 14px;
+  padding: 18px 0 11px;
   gap: 4px;
 }
 /* 토글기능 */
@@ -243,19 +243,21 @@ width: 10px;
   border-bottom: 2px solid rgba(0, 0, 0, 0);
   padding: 9px 0 1px;
 }
-.section2-hr {
+/* .section2-hr {
   margin-bottom: 10px;
   background-color: #777777;
   height: 1px;
   border: 0;
-}
+} */
+
 /* 봉사모집 한줄 묶음 */
 .list-wrap {
   position: relative;
   display: flex;
   flex-direction: column;
-  padding-bottom: 12px;
-  gap: 12px;
+} 
+.list-wrap:nth-child(1) {
+    border-top: 1px solid #777777;
 }
 .list-wrap hr {
   background: #d2d2d2;
@@ -269,6 +271,7 @@ width: 10px;
   min-width: 100px;
   height: 100%;
   text-align: left;
+  padding-top: 9px;
 }
 .list-wrap > .img-box:last-child {
   display: none;
@@ -343,9 +346,9 @@ color: #134aa9;
   margin-bottom: 5px;
 }
 
-.list-wrap .img-box a:hover span , .list-wrap .img-box a:hover{
+.list-wrap .img-box:hover {
   color: #a5a5a5;
-  background-color: #fcfcfc;
+  background-color: rgb(246, 247, 253);
   /* transform: translateY(-1px); */
   /* transition: all 0.1s; */
 }
@@ -381,10 +384,16 @@ color: #134aa9;
   padding: 15px 90px;
   margin-top: 50px;
   line-height: 10px;
-  border: 1px solid #cfcfcf;
+  color: #333;
+  border: 1px solid rgb(221, 221, 221);
   border-radius: 7px;
   background-color: #fff;
-  color: #333;
+  /* box-shadow: rgba(28, 28, 28, 0.1) 0px 1px 6px -1px, rgba(26, 26, 26, 0.06) 0px 1px 4px -1px; */
+}
+.pgn > a:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px -1px, rgba(0, 0, 0, 0.047) 0px 1px 4px -1px;
+    border: 1px solid rgb(221, 221, 221);
+    color: #5f5f5f;
 }
 /* 섹션3 */
 .section3 {
@@ -411,6 +420,7 @@ color: #134aa9;
   padding: 37px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px;
   border-radius: 30px;
+  transition: all 0.27s linear;
 }
 .CM-box .CM span,
 .FAQ-box .FAQ span {
@@ -433,12 +443,12 @@ color: #134aa9;
 .CM-box:hover .fa-plus ,
 .FAQ-box:hover .fa-plus {
   transform: rotate( 360deg );
-  color: #0144b8;
-}
-.CM-box:hover ,
-.FAQ-box:hover {
-  color: #0144b8;
-}
+ /* color: #0144b8; */
+  }
+  /* .CM-box:hover ,
+  .FAQ-box:hover {
+    color: #0144b8;
+  } */
 .section3 .CM-box:hover , .section3 .FAQ-box:hover {
   box-shadow: rgba(0, 0, 0, 0.212) 0px 3px 10px 0px;
    transform: translateY(-9px);
